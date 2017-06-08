@@ -1,0 +1,42 @@
+﻿  AudioEngine.cpp
+  Camera2D.cpp
+  DebugRenderer.cpp
+DebugRenderer.cpp(96): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+DebugRenderer.cpp(109): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+DebugRenderer.cpp(123): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+DebugRenderer.cpp(164): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ErrorHandle.cpp
+  GLSLProgram.cpp
+  GUI.cpp
+C:\Users\Alice\Programming\Otherwise\deps\include\CEGUI/Exceptions.h(41): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'CEGUI::Exception'
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime_exception.h(43): note: see declaration of 'std::exception'
+  C:\Users\Alice\Programming\Otherwise\deps\include\CEGUI/Exceptions.h(40): note: see declaration of 'CEGUI::Exception'
+  ImageLoader.cpp
+  IMainGame.cpp
+  InputManager.cpp
+  IOManager.cpp
+  Messaging.cpp
+  Otherwise.cpp
+  ParticleBatch2D.cpp
+  ParticleEngine2D.cpp
+  PathFinding.cpp
+PathFinding.cpp(140): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  PathMapTranslator.cpp
+PathMapTranslator.cpp(54): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+PathMapTranslator.cpp(55): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+PathMapTranslator.cpp(60): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+PathMapTranslator.cpp(61): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+PathMapTranslator.cpp(66): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+PathMapTranslator.cpp(67): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+  picoPNG.cpp
+  ResourceManager.cpp
+  ScreenList.cpp
+ScreenList.cpp(46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Sprite.cpp
+  Compiling...
+  SpriteBatch.cpp
+  SpriteFont.cpp
+  TextureCache.cpp
+  Timing.cpp
+  Window.cpp
+LINK : fatal error LNK1561: entry point must be defined

@@ -1,0 +1,17 @@
+The following textures are from Seed of Andromeda:
+glass.png
+light_bricks.png
+red_bricks.png
+
+Artist: Andreas Ressl
+
+.//floor
+H//human
+B//bricks
+G//glass
+N//no change
+W//window (block that humans can shoot over but animals must break)
+D//door, allowes human movement, but not animal
+U//up  stairs
+D//down stairs
+A//ammunition

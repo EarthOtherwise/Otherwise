@@ -1,0 +1,96 @@
+﻿  Zombie.cpp
+  Weapon.cpp
+  TowerDefence.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\towerdefence.cpp(79): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\towerdefence.cpp(84): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\towerdefence.cpp(89): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\towerdefence.cpp(132): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+  Sword.cpp
+  Spear.cpp
+  SightLines.cpp
+  SentientRace.cpp
+  Player.cpp
+  MapEdit.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\mapedit.cpp(82): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\mapedit.cpp(92): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\mapedit.cpp(113): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+  MainMenu.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\mainmenu.cpp(37): warning C4244: '=': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\mainmenu.cpp(45): warning C4244: 'initializing': conversion from 'Uint32' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\mainmenu.cpp(66): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+  main.cpp
+  Level.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(77): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(78): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(110): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(111): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(142): warning C4018: '<': signed/unsigned mismatch
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(168): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\level.cpp(175): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Human.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\human.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Gun.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\gun.cpp(17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\gun.cpp(41): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\gun.cpp(50): warning C4244: 'argument': conversion from 'const int' to 'const float', possible loss of data
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(655): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(773): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(_Objty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet,
+              _Objty=Bullet
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(773): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(_Objty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet,
+              _Objty=Bullet
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(918): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(std::allocator<_Ty> &,_Objty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Bullet>,
+              _Ty=Bullet,
+              _Objty=Bullet
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(917): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(std::allocator<_Ty> &,_Objty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Bullet>,
+              _Ty=Bullet,
+              _Objty=Bullet
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(929): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<Bullet,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(_Ty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(928): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<Bullet,glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(_Ty *,glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet
+          ]
+  c:\users\alice\programming\projects\otherwise\testingapplication\gun.cpp(53): note: see reference to function template instantiation 'void std::vector<Bullet,std::allocator<_Ty>>::emplace_back<glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet
+          ]
+  c:\users\alice\programming\projects\otherwise\testingapplication\gun.cpp(50): note: see reference to function template instantiation 'void std::vector<Bullet,std::allocator<_Ty>>::emplace_back<glm::tvec2<float,0>,glm::tvec2<float,0>,int&,float&>(glm::tvec2<float,0> &&,glm::tvec2<float,0> &&,int &,float &)' being compiled
+          with
+          [
+              _Ty=Bullet
+          ]
+  Bullet.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\bullet.cpp(70): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\bullet.cpp(71): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\alice\programming\projects\otherwise\testingapplication\bullet.cpp(74): warning C4018: '>=': signed/unsigned mismatch
+c:\users\alice\programming\projects\otherwise\testingapplication\bullet.cpp(75): warning C4018: '>=': signed/unsigned mismatch
+  Bow.cpp
+  Arrow.cpp
+  Animal.cpp
+  Ammo.cpp
+  Agent.cpp
+c:\users\alice\programming\projects\otherwise\testingapplication\agent.cpp(138): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Generating Code...
+  TestingApplication.vcxproj -> C:\Users\Alice\Programming\Projects\Otherwise\Debug\TestingApplication.exe
+  TestingApplication.vcxproj -> C:\Users\Alice\Programming\Projects\Otherwise\Debug\TestingApplication.pdb (Partial PDB)

@@ -1,0 +1,8 @@
+.		blank tiles, 0 cost
+H		human tiles, 100 cost
+B		brick tiles, 10 cost
+A		half wall tiles, 5 cost
+G		goal tile, 0 cost
+S		spawn tiles, 0 cost
+W		water tiles, 8 cost
+F		fire line tiles, 20 cost

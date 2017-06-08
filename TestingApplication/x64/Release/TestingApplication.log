@@ -1,0 +1,37 @@
+﻿  Agent.cpp
+c:\users\alice\programming\otherwise\testingapplication\Agent.h(3): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  Ammo.cpp
+c:\users\alice\programming\otherwise\testingapplication\Ammo.h(4): fatal error C1083: Cannot open include file: 'glm\glm.hpp': No such file or directory
+  Animal.cpp
+  Arrow.cpp
+c:\users\alice\programming\otherwise\testingapplication\Ammo.h(4): fatal error C1083: Cannot open include file: 'glm\glm.hpp': No such file or directory
+  Bow.cpp
+c:\users\alice\programming\otherwise\testingapplication\Weapon.h(3): fatal error C1083: Cannot open include file: 'Otherwise/spritebatch.h': No such file or directory
+  Bullet.cpp
+c:\users\alice\programming\otherwise\testingapplication\Bullet.h(3): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  Gun.cpp
+c:\users\alice\programming\otherwise\testingapplication\Gun.h(4): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  Human.cpp
+c:\users\alice\programming\otherwise\testingapplication\Agent.h(3): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  Level.cpp
+c:\users\alice\programming\otherwise\testingapplication\Level.h(8): fatal error C1083: Cannot open include file: 'Otherwise/SpriteBatch.h': No such file or directory
+  main.cpp
+main.cpp(1): fatal error C1083: Cannot open include file: 'Otherwise/Otherwise.h': No such file or directory
+  MainMenu.cpp
+c:\users\alice\programming\otherwise\testingapplication\MainMenu.h(3): fatal error C1083: Cannot open include file: 'Otherwise/SpriteBatch.h': No such file or directory
+  MapEdit.cpp
+c:\users\alice\programming\otherwise\testingapplication\MapEdit.h(3): fatal error C1083: Cannot open include file: 'Otherwise/SpriteBatch.h': No such file or directory
+  Player.cpp
+c:\users\alice\programming\otherwise\testingapplication\Agent.h(3): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
+  SentientRace.cpp
+  SightLines.cpp
+  Spear.cpp
+c:\users\alice\programming\otherwise\testingapplication\Weapon.h(3): fatal error C1083: Cannot open include file: 'Otherwise/spritebatch.h': No such file or directory
+  Sword.cpp
+c:\users\alice\programming\otherwise\testingapplication\Weapon.h(3): fatal error C1083: Cannot open include file: 'Otherwise/spritebatch.h': No such file or directory
+  TowerDefence.cpp
+c:\users\alice\programming\otherwise\testingapplication\TowerDefence.h(2): fatal error C1083: Cannot open include file: 'Otherwise/SpriteBatch.h': No such file or directory
+  Weapon.cpp
+c:\users\alice\programming\otherwise\testingapplication\Weapon.h(3): fatal error C1083: Cannot open include file: 'Otherwise/spritebatch.h': No such file or directory
+  Zombie.cpp
+c:\users\alice\programming\otherwise\testingapplication\Agent.h(3): fatal error C1083: Cannot open include file: 'glm/glm.hpp': No such file or directory
