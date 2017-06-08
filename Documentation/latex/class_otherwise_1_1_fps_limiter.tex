@@ -1,0 +1,118 @@
+\hypertarget{class_otherwise_1_1_fps_limiter}{}\section{Otherwise\+:\+:Fps\+Limiter Class Reference}
+\label{class_otherwise_1_1_fps_limiter}\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+
+
+Calculates F\+PS and also limits F\+PS.  
+
+
+
+
+{\ttfamily \#include $<$Timing.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_fps_limiter_a33e5f47acb0231681e68debf50baeb82}{Fps\+Limiter} ()
+\item 
+void \hyperlink{class_otherwise_1_1_fps_limiter_ae66d95d3064d999c843c24197da9fa45}{init} (float max\+F\+PS)
+\item 
+void \hyperlink{class_otherwise_1_1_fps_limiter_a561d97447c641547e59b15487e5c70f2}{set\+Max\+F\+PS} (float max\+F\+PS)
+\item 
+void \hyperlink{class_otherwise_1_1_fps_limiter_a0c608b963c939c8dc866488d4ba1edfd}{begin} ()
+\item 
+float \hyperlink{class_otherwise_1_1_fps_limiter_acde3d9d1cccba1aaa3797eb212aec44e}{end} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_otherwise_1_1_fps_limiter_ae82062ce3e0b7558eb2dc3ca643b0fbe}{calculate\+F\+PS} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_otherwise_1_1_fps_limiter_a8e76b63aaeb1547ef875879bc80fe1fe}{\+\_\+fps}
+\item 
+float \hyperlink{class_otherwise_1_1_fps_limiter_a2ce59cedc6b8b28e32c1efe908e95548}{\+\_\+max\+F\+PS}
+\item 
+float \hyperlink{class_otherwise_1_1_fps_limiter_a169412fddc4300a01480e8a6626f4c21}{\+\_\+frame\+Time}
+\item 
+unsigned int \hyperlink{class_otherwise_1_1_fps_limiter_a58b6d9e0f2a36ee4c53e54d4c9ec199d}{\+\_\+start\+Ticks}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calculates F\+PS and also limits F\+PS. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a33e5f47acb0231681e68debf50baeb82}\label{class_otherwise_1_1_fps_limiter_a33e5f47acb0231681e68debf50baeb82}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!Fps\+Limiter@{Fps\+Limiter}}
+\index{Fps\+Limiter@{Fps\+Limiter}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{Fps\+Limiter()}{FpsLimiter()}}
+{\footnotesize\ttfamily Otherwise\+::\+Fps\+Limiter\+::\+Fps\+Limiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a0c608b963c939c8dc866488d4ba1edfd}\label{class_otherwise_1_1_fps_limiter_a0c608b963c939c8dc866488d4ba1edfd}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!begin@{begin}}
+\index{begin@{begin}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Fps\+Limiter\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_ae82062ce3e0b7558eb2dc3ca643b0fbe}\label{class_otherwise_1_1_fps_limiter_ae82062ce3e0b7558eb2dc3ca643b0fbe}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!calculate\+F\+PS@{calculate\+F\+PS}}
+\index{calculate\+F\+PS@{calculate\+F\+PS}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{calculate\+F\+P\+S()}{calculateFPS()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Fps\+Limiter\+::calculate\+F\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_acde3d9d1cccba1aaa3797eb212aec44e}\label{class_otherwise_1_1_fps_limiter_acde3d9d1cccba1aaa3797eb212aec44e}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!end@{end}}
+\index{end@{end}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily float Otherwise\+::\+Fps\+Limiter\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_ae66d95d3064d999c843c24197da9fa45}\label{class_otherwise_1_1_fps_limiter_ae66d95d3064d999c843c24197da9fa45}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Fps\+Limiter\+::init (\begin{DoxyParamCaption}\item[{float}]{max\+F\+PS }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a561d97447c641547e59b15487e5c70f2}\label{class_otherwise_1_1_fps_limiter_a561d97447c641547e59b15487e5c70f2}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!set\+Max\+F\+PS@{set\+Max\+F\+PS}}
+\index{set\+Max\+F\+PS@{set\+Max\+F\+PS}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{set\+Max\+F\+P\+S()}{setMaxFPS()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Fps\+Limiter\+::set\+Max\+F\+PS (\begin{DoxyParamCaption}\item[{float}]{max\+F\+PS }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a8e76b63aaeb1547ef875879bc80fe1fe}\label{class_otherwise_1_1_fps_limiter_a8e76b63aaeb1547ef875879bc80fe1fe}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!\+\_\+fps@{\+\_\+fps}}
+\index{\+\_\+fps@{\+\_\+fps}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{\+\_\+fps}{\_fps}}
+{\footnotesize\ttfamily float Otherwise\+::\+Fps\+Limiter\+::\+\_\+fps\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a169412fddc4300a01480e8a6626f4c21}\label{class_otherwise_1_1_fps_limiter_a169412fddc4300a01480e8a6626f4c21}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!\+\_\+frame\+Time@{\+\_\+frame\+Time}}
+\index{\+\_\+frame\+Time@{\+\_\+frame\+Time}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{\+\_\+frame\+Time}{\_frameTime}}
+{\footnotesize\ttfamily float Otherwise\+::\+Fps\+Limiter\+::\+\_\+frame\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a2ce59cedc6b8b28e32c1efe908e95548}\label{class_otherwise_1_1_fps_limiter_a2ce59cedc6b8b28e32c1efe908e95548}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!\+\_\+max\+F\+PS@{\+\_\+max\+F\+PS}}
+\index{\+\_\+max\+F\+PS@{\+\_\+max\+F\+PS}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{\+\_\+max\+F\+PS}{\_maxFPS}}
+{\footnotesize\ttfamily float Otherwise\+::\+Fps\+Limiter\+::\+\_\+max\+F\+PS\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_fps_limiter_a58b6d9e0f2a36ee4c53e54d4c9ec199d}\label{class_otherwise_1_1_fps_limiter_a58b6d9e0f2a36ee4c53e54d4c9ec199d}} 
+\index{Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}!\+\_\+start\+Ticks@{\+\_\+start\+Ticks}}
+\index{\+\_\+start\+Ticks@{\+\_\+start\+Ticks}!Otherwise\+::\+Fps\+Limiter@{Otherwise\+::\+Fps\+Limiter}}
+\subsubsection{\texorpdfstring{\+\_\+start\+Ticks}{\_startTicks}}
+{\footnotesize\ttfamily unsigned int Otherwise\+::\+Fps\+Limiter\+::\+\_\+start\+Ticks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_timing_8h}{Timing.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_timing_8cpp}{Timing.\+cpp}\end{DoxyCompactItemize}

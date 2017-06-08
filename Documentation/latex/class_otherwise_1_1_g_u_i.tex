@@ -1,0 +1,182 @@
+\hypertarget{class_otherwise_1_1_g_u_i}{}\section{Otherwise\+:\+:G\+UI Class Reference}
+\label{class_otherwise_1_1_g_u_i}\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+
+
+{\ttfamily \#include $<$G\+U\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_af5a8499f09a6fb67c60febe056d6d15d}{init} (const std\+::string \&resource\+Directory)
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a4f90a71192bc9b839817e4fea43daf90}{destroy} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a44cfa8af4d72df100699e099ebc696ad}{draw} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a9a3bc9b03b0910f7cc9968a090cc2af1}{update} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a53e464baf6ce525c9832afddc24700d6}{set\+Mouse\+Cursor} (const std\+::string \&image\+File)
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_ad684b9943a6c148261f7f5620324be05}{show\+Mouse\+Cursor} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_abae0d030311f1af04fdf750e83460c70}{hide\+Mouse\+Cursor} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a802ecd12a45fbd24db58db4418cae985}{on\+S\+D\+L\+Event} (S\+D\+L\+\_\+\+Event \&evnt)
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_a54c6fe7efc86547e9479d01d720b8cfa}{load\+Scheme} (const std\+::string \&scheme\+File)
+\item 
+void \hyperlink{class_otherwise_1_1_g_u_i_af77fb4b3616e97cb2f86dbfa497cc652}{set\+Font} (const std\+::string \&font\+File)
+\item 
+C\+E\+G\+U\+I\+::\+Window $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_a210f438c6c5c52c34c8f2d5397cbab60}{create\+Widget} (const std\+::string \&type, const glm\+::vec4 \&dest\+Rect\+Perc, const glm\+::vec4 \&dest\+Rect\+Pix, const std\+::string \&name=\char`\"{}\char`\"{})
+\item 
+C\+E\+G\+U\+I\+::\+Window $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_a147e9f8adc6d75ff4d04e10f708398b6}{create\+Widget} (C\+E\+G\+U\+I\+::\+Window $\ast$parent, const std\+::string \&type, const glm\+::vec4 \&dest\+Rect\+Perc, const glm\+::vec4 \&dest\+Rect\+Pix, const std\+::string \&name=\char`\"{}\char`\"{})
+\item 
+const C\+E\+G\+U\+I\+::\+G\+U\+I\+Context $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_ac0499b56edd2d8b73381e90670b21e8d}{get\+Context} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_otherwise_1_1_g_u_i_a63bdb668c0d04ae7c93159dce9469d32}{set\+Widget\+Dest\+Rect} (C\+E\+G\+U\+I\+::\+Window $\ast$widget, const glm\+::vec4 \&dest\+Rect\+Perc, const glm\+::vec4 \&dest\+Rect\+Pix)
+\item 
+static C\+E\+G\+U\+I\+::\+Open\+G\+L3\+Renderer $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_a0f7980dfb3eb65fe8be201bee814aa19}{get\+Renderer} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+C\+E\+G\+U\+I\+::\+G\+U\+I\+Context $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_a6d6c577375d688bf2a92ee514d76e2de}{m\+\_\+context} = nullptr
+\item 
+C\+E\+G\+U\+I\+::\+Window $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_a913d15fe9ed784b2291d6b4c642e09a2}{m\+\_\+root} = nullptr
+\item 
+unsigned int \hyperlink{class_otherwise_1_1_g_u_i_a2ca71b9f19ec83ea95a0401bb020a895}{m\+\_\+last\+Time} = 0
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static C\+E\+G\+U\+I\+::\+Open\+G\+L3\+Renderer $\ast$ \hyperlink{class_otherwise_1_1_g_u_i_ac8ab7faa598219a9134e2841f142afbd}{m\+\_\+renderer} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a210f438c6c5c52c34c8f2d5397cbab60}\label{class_otherwise_1_1_g_u_i_a210f438c6c5c52c34c8f2d5397cbab60}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!create\+Widget@{create\+Widget}}
+\index{create\+Widget@{create\+Widget}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{create\+Widget()}{createWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+E\+G\+U\+I\+::\+Window $\ast$ Otherwise\+::\+G\+U\+I\+::create\+Widget (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Perc,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Pix,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a147e9f8adc6d75ff4d04e10f708398b6}\label{class_otherwise_1_1_g_u_i_a147e9f8adc6d75ff4d04e10f708398b6}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!create\+Widget@{create\+Widget}}
+\index{create\+Widget@{create\+Widget}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{create\+Widget()}{createWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+E\+G\+U\+I\+::\+Window $\ast$ Otherwise\+::\+G\+U\+I\+::create\+Widget (\begin{DoxyParamCaption}\item[{C\+E\+G\+U\+I\+::\+Window $\ast$}]{parent,  }\item[{const std\+::string \&}]{type,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Perc,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Pix,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a4f90a71192bc9b839817e4fea43daf90}\label{class_otherwise_1_1_g_u_i_a4f90a71192bc9b839817e4fea43daf90}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!destroy@{destroy}}
+\index{destroy@{destroy}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a44cfa8af4d72df100699e099ebc696ad}\label{class_otherwise_1_1_g_u_i_a44cfa8af4d72df100699e099ebc696ad}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_ac0499b56edd2d8b73381e90670b21e8d}\label{class_otherwise_1_1_g_u_i_ac0499b56edd2d8b73381e90670b21e8d}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!get\+Context@{get\+Context}}
+\index{get\+Context@{get\+Context}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{get\+Context()}{getContext()}}
+{\footnotesize\ttfamily const C\+E\+G\+U\+I\+::\+G\+U\+I\+Context$\ast$ Otherwise\+::\+G\+U\+I\+::get\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a0f7980dfb3eb65fe8be201bee814aa19}\label{class_otherwise_1_1_g_u_i_a0f7980dfb3eb65fe8be201bee814aa19}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!get\+Renderer@{get\+Renderer}}
+\index{get\+Renderer@{get\+Renderer}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{get\+Renderer()}{getRenderer()}}
+{\footnotesize\ttfamily static C\+E\+G\+U\+I\+::\+Open\+G\+L3\+Renderer$\ast$ Otherwise\+::\+G\+U\+I\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_abae0d030311f1af04fdf750e83460c70}\label{class_otherwise_1_1_g_u_i_abae0d030311f1af04fdf750e83460c70}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!hide\+Mouse\+Cursor@{hide\+Mouse\+Cursor}}
+\index{hide\+Mouse\+Cursor@{hide\+Mouse\+Cursor}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{hide\+Mouse\+Cursor()}{hideMouseCursor()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::hide\+Mouse\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_af5a8499f09a6fb67c60febe056d6d15d}\label{class_otherwise_1_1_g_u_i_af5a8499f09a6fb67c60febe056d6d15d}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!init@{init}}
+\index{init@{init}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::init (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a54c6fe7efc86547e9479d01d720b8cfa}\label{class_otherwise_1_1_g_u_i_a54c6fe7efc86547e9479d01d720b8cfa}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!load\+Scheme@{load\+Scheme}}
+\index{load\+Scheme@{load\+Scheme}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{load\+Scheme()}{loadScheme()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::load\+Scheme (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scheme\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a802ecd12a45fbd24db58db4418cae985}\label{class_otherwise_1_1_g_u_i_a802ecd12a45fbd24db58db4418cae985}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!on\+S\+D\+L\+Event@{on\+S\+D\+L\+Event}}
+\index{on\+S\+D\+L\+Event@{on\+S\+D\+L\+Event}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{on\+S\+D\+L\+Event()}{onSDLEvent()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::on\+S\+D\+L\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event \&}]{evnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_af77fb4b3616e97cb2f86dbfa497cc652}\label{class_otherwise_1_1_g_u_i_af77fb4b3616e97cb2f86dbfa497cc652}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{set\+Font()}{setFont()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::set\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a53e464baf6ce525c9832afddc24700d6}\label{class_otherwise_1_1_g_u_i_a53e464baf6ce525c9832afddc24700d6}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!set\+Mouse\+Cursor@{set\+Mouse\+Cursor}}
+\index{set\+Mouse\+Cursor@{set\+Mouse\+Cursor}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{set\+Mouse\+Cursor()}{setMouseCursor()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::set\+Mouse\+Cursor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{image\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a63bdb668c0d04ae7c93159dce9469d32}\label{class_otherwise_1_1_g_u_i_a63bdb668c0d04ae7c93159dce9469d32}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!set\+Widget\+Dest\+Rect@{set\+Widget\+Dest\+Rect}}
+\index{set\+Widget\+Dest\+Rect@{set\+Widget\+Dest\+Rect}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{set\+Widget\+Dest\+Rect()}{setWidgetDestRect()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::set\+Widget\+Dest\+Rect (\begin{DoxyParamCaption}\item[{C\+E\+G\+U\+I\+::\+Window $\ast$}]{widget,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Perc,  }\item[{const glm\+::vec4 \&}]{dest\+Rect\+Pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_ad684b9943a6c148261f7f5620324be05}\label{class_otherwise_1_1_g_u_i_ad684b9943a6c148261f7f5620324be05}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!show\+Mouse\+Cursor@{show\+Mouse\+Cursor}}
+\index{show\+Mouse\+Cursor@{show\+Mouse\+Cursor}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{show\+Mouse\+Cursor()}{showMouseCursor()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::show\+Mouse\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a9a3bc9b03b0910f7cc9968a090cc2af1}\label{class_otherwise_1_1_g_u_i_a9a3bc9b03b0910f7cc9968a090cc2af1}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!update@{update}}
+\index{update@{update}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+U\+I\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a6d6c577375d688bf2a92ee514d76e2de}\label{class_otherwise_1_1_g_u_i_a6d6c577375d688bf2a92ee514d76e2de}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!m\+\_\+context@{m\+\_\+context}}
+\index{m\+\_\+context@{m\+\_\+context}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{m\+\_\+context}{m\_context}}
+{\footnotesize\ttfamily C\+E\+G\+U\+I\+::\+G\+U\+I\+Context$\ast$ Otherwise\+::\+G\+U\+I\+::m\+\_\+context = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a2ca71b9f19ec83ea95a0401bb020a895}\label{class_otherwise_1_1_g_u_i_a2ca71b9f19ec83ea95a0401bb020a895}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!m\+\_\+last\+Time@{m\+\_\+last\+Time}}
+\index{m\+\_\+last\+Time@{m\+\_\+last\+Time}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+Time}{m\_lastTime}}
+{\footnotesize\ttfamily unsigned int Otherwise\+::\+G\+U\+I\+::m\+\_\+last\+Time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_ac8ab7faa598219a9134e2841f142afbd}\label{class_otherwise_1_1_g_u_i_ac8ab7faa598219a9134e2841f142afbd}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!m\+\_\+renderer@{m\+\_\+renderer}}
+\index{m\+\_\+renderer@{m\+\_\+renderer}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{m\+\_\+renderer}{m\_renderer}}
+{\footnotesize\ttfamily C\+E\+G\+U\+I\+::\+Open\+G\+L3\+Renderer $\ast$ Otherwise\+::\+G\+U\+I\+::m\+\_\+renderer = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_u_i_a913d15fe9ed784b2291d6b4c642e09a2}\label{class_otherwise_1_1_g_u_i_a913d15fe9ed784b2291d6b4c642e09a2}} 
+\index{Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}!m\+\_\+root@{m\+\_\+root}}
+\index{m\+\_\+root@{m\+\_\+root}!Otherwise\+::\+G\+UI@{Otherwise\+::\+G\+UI}}
+\subsubsection{\texorpdfstring{m\+\_\+root}{m\_root}}
+{\footnotesize\ttfamily C\+E\+G\+U\+I\+::\+Window$\ast$ Otherwise\+::\+G\+U\+I\+::m\+\_\+root = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_g_u_i_8h}{G\+U\+I.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_g_u_i_8cpp}{G\+U\+I.\+cpp}\end{DoxyCompactItemize}

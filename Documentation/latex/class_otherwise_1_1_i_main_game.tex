@@ -1,0 +1,185 @@
+\hypertarget{class_otherwise_1_1_i_main_game}{}\section{Otherwise\+:\+:I\+Main\+Game Class Reference}
+\label{class_otherwise_1_1_i_main_game}\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+
+
+{\ttfamily \#include $<$I\+Main\+Game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_i_main_game_a7c7022f55c7c337012e2a2807bdcc7be}{I\+Main\+Game} ()
+\item 
+virtual \hyperlink{class_otherwise_1_1_i_main_game_a0a914b8a3ed77c6276b0b117f212b21e}{$\sim$\+I\+Main\+Game} ()
+\item 
+void \hyperlink{class_otherwise_1_1_i_main_game_ad78a85255ee33964be3409c3dfa70963}{run} ()
+\item 
+void \hyperlink{class_otherwise_1_1_i_main_game_ae26fe0166901cfdd02150bda42870093}{exit\+Game} ()
+\item 
+virtual void \hyperlink{class_otherwise_1_1_i_main_game_a1c56e48c28bc0e984328083ccdd99908}{on\+Init} ()=0
+\item 
+virtual void \hyperlink{class_otherwise_1_1_i_main_game_ad74c1f643eab910737647db8d5110d47}{add\+Screens} ()=0
+\item 
+virtual void \hyperlink{class_otherwise_1_1_i_main_game_a81f4e97badc55d6eb6de119eea6247df}{on\+Exit} ()=0
+\item 
+void \hyperlink{class_otherwise_1_1_i_main_game_a6baa44857c11c6c1d1e0085f5dbf953d}{on\+S\+D\+L\+Event} (S\+D\+L\+\_\+\+Event \&evnt)
+\item 
+const float \hyperlink{class_otherwise_1_1_i_main_game_ad029d855d08e30c027050f3ac40cc35a}{get\+Fps} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_input_manager}{Input\+Manager} \hyperlink{class_otherwise_1_1_i_main_game_a00d93419b43f09f7708a0c872e3b09c8}{input\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_otherwise_1_1_i_main_game_aa5a8c900c9fb1a8574ae00269060b9a7}{update} ()
+\item 
+virtual void \hyperlink{class_otherwise_1_1_i_main_game_a59c95822091dadfe7ed59de30b5d4d5f}{draw} ()
+\item 
+bool \hyperlink{class_otherwise_1_1_i_main_game_aaa5b8aea58011bbf9388e71c13111998}{init} ()
+\item 
+bool \hyperlink{class_otherwise_1_1_i_main_game_ab7d6c71af1f1a69c98232ec656a4991b}{init\+Systems} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_otherwise_1_1_screen_list}{Screen\+List} $>$ \hyperlink{class_otherwise_1_1_i_main_game_a95b6ec2b8e5e6810bdab4b156d2192df}{m\+\_\+screen\+List} = nullptr
+\item 
+\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ \hyperlink{class_otherwise_1_1_i_main_game_a9f1c425bf1399b5e29da01a7a118640a}{m\+\_\+current\+Screen} = nullptr
+\item 
+bool \hyperlink{class_otherwise_1_1_i_main_game_a3e43c135614e86b28746448d004d0617}{m\+\_\+is\+Running} = false
+\item 
+float \hyperlink{class_otherwise_1_1_i_main_game_a65d7ad2d2c2d9259bc2dd39b6a1953ed}{m\+\_\+fps} = 0.\+0f
+\item 
+\hyperlink{class_otherwise_1_1_window}{Window} \hyperlink{class_otherwise_1_1_i_main_game_ac7a18e4bb3f7a4060cc815bbbf5e04cf}{m\+\_\+window}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a7c7022f55c7c337012e2a2807bdcc7be}\label{class_otherwise_1_1_i_main_game_a7c7022f55c7c337012e2a2807bdcc7be}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!I\+Main\+Game@{I\+Main\+Game}}
+\index{I\+Main\+Game@{I\+Main\+Game}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{I\+Main\+Game()}{IMainGame()}}
+{\footnotesize\ttfamily Otherwise\+::\+I\+Main\+Game\+::\+I\+Main\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a0a914b8a3ed77c6276b0b117f212b21e}\label{class_otherwise_1_1_i_main_game_a0a914b8a3ed77c6276b0b117f212b21e}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!````~I\+Main\+Game@{$\sim$\+I\+Main\+Game}}
+\index{````~I\+Main\+Game@{$\sim$\+I\+Main\+Game}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Main\+Game()}{~IMainGame()}}
+{\footnotesize\ttfamily Otherwise\+::\+I\+Main\+Game\+::$\sim$\+I\+Main\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ad74c1f643eab910737647db8d5110d47}\label{class_otherwise_1_1_i_main_game_ad74c1f643eab910737647db8d5110d47}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!add\+Screens@{add\+Screens}}
+\index{add\+Screens@{add\+Screens}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{add\+Screens()}{addScreens()}}
+{\footnotesize\ttfamily virtual void Otherwise\+::\+I\+Main\+Game\+::add\+Screens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a59c95822091dadfe7ed59de30b5d4d5f}\label{class_otherwise_1_1_i_main_game_a59c95822091dadfe7ed59de30b5d4d5f}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Otherwise\+::\+I\+Main\+Game\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ae26fe0166901cfdd02150bda42870093}\label{class_otherwise_1_1_i_main_game_ae26fe0166901cfdd02150bda42870093}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!exit\+Game@{exit\+Game}}
+\index{exit\+Game@{exit\+Game}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{exit\+Game()}{exitGame()}}
+{\footnotesize\ttfamily void Otherwise\+::\+I\+Main\+Game\+::exit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ad029d855d08e30c027050f3ac40cc35a}\label{class_otherwise_1_1_i_main_game_ad029d855d08e30c027050f3ac40cc35a}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!get\+Fps@{get\+Fps}}
+\index{get\+Fps@{get\+Fps}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{get\+Fps()}{getFps()}}
+{\footnotesize\ttfamily const float Otherwise\+::\+I\+Main\+Game\+::get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_aaa5b8aea58011bbf9388e71c13111998}\label{class_otherwise_1_1_i_main_game_aaa5b8aea58011bbf9388e71c13111998}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!init@{init}}
+\index{init@{init}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+I\+Main\+Game\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ab7d6c71af1f1a69c98232ec656a4991b}\label{class_otherwise_1_1_i_main_game_ab7d6c71af1f1a69c98232ec656a4991b}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!init\+Systems@{init\+Systems}}
+\index{init\+Systems@{init\+Systems}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{init\+Systems()}{initSystems()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+I\+Main\+Game\+::init\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a81f4e97badc55d6eb6de119eea6247df}\label{class_otherwise_1_1_i_main_game_a81f4e97badc55d6eb6de119eea6247df}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!on\+Exit@{on\+Exit}}
+\index{on\+Exit@{on\+Exit}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{on\+Exit()}{onExit()}}
+{\footnotesize\ttfamily virtual void Otherwise\+::\+I\+Main\+Game\+::on\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a1c56e48c28bc0e984328083ccdd99908}\label{class_otherwise_1_1_i_main_game_a1c56e48c28bc0e984328083ccdd99908}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!on\+Init@{on\+Init}}
+\index{on\+Init@{on\+Init}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{on\+Init()}{onInit()}}
+{\footnotesize\ttfamily virtual void Otherwise\+::\+I\+Main\+Game\+::on\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a6baa44857c11c6c1d1e0085f5dbf953d}\label{class_otherwise_1_1_i_main_game_a6baa44857c11c6c1d1e0085f5dbf953d}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!on\+S\+D\+L\+Event@{on\+S\+D\+L\+Event}}
+\index{on\+S\+D\+L\+Event@{on\+S\+D\+L\+Event}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{on\+S\+D\+L\+Event()}{onSDLEvent()}}
+{\footnotesize\ttfamily void Otherwise\+::\+I\+Main\+Game\+::on\+S\+D\+L\+Event (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event \&}]{evnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ad78a85255ee33964be3409c3dfa70963}\label{class_otherwise_1_1_i_main_game_ad78a85255ee33964be3409c3dfa70963}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!run@{run}}
+\index{run@{run}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Otherwise\+::\+I\+Main\+Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_aa5a8c900c9fb1a8574ae00269060b9a7}\label{class_otherwise_1_1_i_main_game_aa5a8c900c9fb1a8574ae00269060b9a7}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!update@{update}}
+\index{update@{update}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Otherwise\+::\+I\+Main\+Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a00d93419b43f09f7708a0c872e3b09c8}\label{class_otherwise_1_1_i_main_game_a00d93419b43f09f7708a0c872e3b09c8}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!input\+Manager@{input\+Manager}}
+\index{input\+Manager@{input\+Manager}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{input\+Manager}{inputManager}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_input_manager}{Input\+Manager} Otherwise\+::\+I\+Main\+Game\+::input\+Manager}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a9f1c425bf1399b5e29da01a7a118640a}\label{class_otherwise_1_1_i_main_game_a9f1c425bf1399b5e29da01a7a118640a}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!m\+\_\+current\+Screen@{m\+\_\+current\+Screen}}
+\index{m\+\_\+current\+Screen@{m\+\_\+current\+Screen}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+Screen}{m\_currentScreen}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen}$\ast$ Otherwise\+::\+I\+Main\+Game\+::m\+\_\+current\+Screen = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a65d7ad2d2c2d9259bc2dd39b6a1953ed}\label{class_otherwise_1_1_i_main_game_a65d7ad2d2c2d9259bc2dd39b6a1953ed}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!m\+\_\+fps@{m\+\_\+fps}}
+\index{m\+\_\+fps@{m\+\_\+fps}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{m\+\_\+fps}{m\_fps}}
+{\footnotesize\ttfamily float Otherwise\+::\+I\+Main\+Game\+::m\+\_\+fps = 0.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a3e43c135614e86b28746448d004d0617}\label{class_otherwise_1_1_i_main_game_a3e43c135614e86b28746448d004d0617}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!m\+\_\+is\+Running@{m\+\_\+is\+Running}}
+\index{m\+\_\+is\+Running@{m\+\_\+is\+Running}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+Running}{m\_isRunning}}
+{\footnotesize\ttfamily bool Otherwise\+::\+I\+Main\+Game\+::m\+\_\+is\+Running = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_a95b6ec2b8e5e6810bdab4b156d2192df}\label{class_otherwise_1_1_i_main_game_a95b6ec2b8e5e6810bdab4b156d2192df}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!m\+\_\+screen\+List@{m\+\_\+screen\+List}}
+\index{m\+\_\+screen\+List@{m\+\_\+screen\+List}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{m\+\_\+screen\+List}{m\_screenList}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{class_otherwise_1_1_screen_list}{Screen\+List}$>$ Otherwise\+::\+I\+Main\+Game\+::m\+\_\+screen\+List = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_i_main_game_ac7a18e4bb3f7a4060cc815bbbf5e04cf}\label{class_otherwise_1_1_i_main_game_ac7a18e4bb3f7a4060cc815bbbf5e04cf}} 
+\index{Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}!m\+\_\+window@{m\+\_\+window}}
+\index{m\+\_\+window@{m\+\_\+window}!Otherwise\+::\+I\+Main\+Game@{Otherwise\+::\+I\+Main\+Game}}
+\subsubsection{\texorpdfstring{m\+\_\+window}{m\_window}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_window}{Window} Otherwise\+::\+I\+Main\+Game\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_i_main_game_8h}{I\+Main\+Game.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_i_main_game_8cpp}{I\+Main\+Game.\+cpp}\end{DoxyCompactItemize}

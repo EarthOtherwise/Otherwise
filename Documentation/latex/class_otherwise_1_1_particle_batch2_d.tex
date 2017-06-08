@@ -1,0 +1,138 @@
+\hypertarget{class_otherwise_1_1_particle_batch2_d}{}\section{Otherwise\+:\+:Particle\+Batch2D Class Reference}
+\label{class_otherwise_1_1_particle_batch2_d}\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+
+
+{\ttfamily \#include $<$Particle\+Batch2\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_particle_batch2_d_ab800f725b2e8630ac122bbf4cf164fe5}{Particle\+Batch2D} ()
+\item 
+\hyperlink{class_otherwise_1_1_particle_batch2_d_a3c38507884ee27a268d99f422cb6b176}{$\sim$\+Particle\+Batch2D} ()
+\item 
+void \hyperlink{class_otherwise_1_1_particle_batch2_d_ac39cfd55e9baa73573914784f700e28a}{init} (int max\+Particles, float decay\+Rate, \hyperlink{struct_otherwise_1_1_g_l_texture}{G\+L\+Texture} texture, std\+::function$<$ void(\hyperlink{class_otherwise_1_1_particle2_d}{Particle2D} \&, float)$>$ update\+Func=\hyperlink{namespace_otherwise_ac7cfb6f643b2ea32aa02502159d17fb6}{default\+Particle\+Update})
+\item 
+void \hyperlink{class_otherwise_1_1_particle_batch2_d_aaf50427527be4f8557b090134478a745}{update} (float delta\+Time)
+\item 
+void \hyperlink{class_otherwise_1_1_particle_batch2_d_ae54c4dc127013ca17633851419493f41}{draw} (\hyperlink{class_otherwise_1_1_sprite_batch}{Sprite\+Batch} $\ast$sprite\+Batch)
+\item 
+void \hyperlink{class_otherwise_1_1_particle_batch2_d_a0ba1571c0743e3b8e5b54d8366c069c4}{add\+Particle} (const glm\+::vec2 \&position, const glm\+::vec2 \&velocity, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color, float width)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_otherwise_1_1_particle_batch2_d_a1e0cea65acdd2b2b77597dac53af0c73}{find\+Free\+Particle} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::function$<$ void(\hyperlink{class_otherwise_1_1_particle2_d}{Particle2D} \&, float)$>$ \hyperlink{class_otherwise_1_1_particle_batch2_d_a6eed0d4ded677fb9044e03f295a6d277}{m\+\_\+update\+Func}
+\begin{DoxyCompactList}\small\item\em Function pointer for custom updates. \end{DoxyCompactList}\item 
+float \hyperlink{class_otherwise_1_1_particle_batch2_d_aea30921077aaeab4bc68b8dac3d843d2}{m\+\_\+decay\+Rate} = 0.\+1f
+\item 
+\hyperlink{class_otherwise_1_1_particle2_d}{Particle2D} $\ast$ \hyperlink{class_otherwise_1_1_particle_batch2_d_a4077a59a77153fea4f721e64e0edcb32}{m\+\_\+particles} = nullptr
+\item 
+int \hyperlink{class_otherwise_1_1_particle_batch2_d_a76764d1b85680eb9ef9e81f719b30194}{m\+\_\+max\+Particles} = 0
+\item 
+int \hyperlink{class_otherwise_1_1_particle_batch2_d_a5ff7e1dd8f9e8e93d0d9286f343c939a}{m\+\_\+last\+Free\+Particle} = 0
+\item 
+\hyperlink{struct_otherwise_1_1_g_l_texture}{G\+L\+Texture} \hyperlink{class_otherwise_1_1_particle_batch2_d_aca86956dd63e0dc63f86d28e1af35fbe}{m\+\_\+texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_ab800f725b2e8630ac122bbf4cf164fe5}\label{class_otherwise_1_1_particle_batch2_d_ab800f725b2e8630ac122bbf4cf164fe5}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!Particle\+Batch2D@{Particle\+Batch2D}}
+\index{Particle\+Batch2D@{Particle\+Batch2D}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{Particle\+Batch2\+D()}{ParticleBatch2D()}}
+{\footnotesize\ttfamily Otherwise\+::\+Particle\+Batch2\+D\+::\+Particle\+Batch2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a3c38507884ee27a268d99f422cb6b176}\label{class_otherwise_1_1_particle_batch2_d_a3c38507884ee27a268d99f422cb6b176}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!````~Particle\+Batch2D@{$\sim$\+Particle\+Batch2D}}
+\index{````~Particle\+Batch2D@{$\sim$\+Particle\+Batch2D}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Batch2\+D()}{~ParticleBatch2D()}}
+{\footnotesize\ttfamily Otherwise\+::\+Particle\+Batch2\+D\+::$\sim$\+Particle\+Batch2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a0ba1571c0743e3b8e5b54d8366c069c4}\label{class_otherwise_1_1_particle_batch2_d_a0ba1571c0743e3b8e5b54d8366c069c4}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!add\+Particle@{add\+Particle}}
+\index{add\+Particle@{add\+Particle}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{add\+Particle()}{addParticle()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Particle\+Batch2\+D\+::add\+Particle (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{position,  }\item[{const glm\+::vec2 \&}]{velocity,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color,  }\item[{float}]{width }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_ae54c4dc127013ca17633851419493f41}\label{class_otherwise_1_1_particle_batch2_d_ae54c4dc127013ca17633851419493f41}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Particle\+Batch2\+D\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_sprite_batch}{Sprite\+Batch} $\ast$}]{sprite\+Batch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a1e0cea65acdd2b2b77597dac53af0c73}\label{class_otherwise_1_1_particle_batch2_d_a1e0cea65acdd2b2b77597dac53af0c73}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!find\+Free\+Particle@{find\+Free\+Particle}}
+\index{find\+Free\+Particle@{find\+Free\+Particle}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{find\+Free\+Particle()}{findFreeParticle()}}
+{\footnotesize\ttfamily int Otherwise\+::\+Particle\+Batch2\+D\+::find\+Free\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_ac39cfd55e9baa73573914784f700e28a}\label{class_otherwise_1_1_particle_batch2_d_ac39cfd55e9baa73573914784f700e28a}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Particle\+Batch2\+D\+::init (\begin{DoxyParamCaption}\item[{int}]{max\+Particles,  }\item[{float}]{decay\+Rate,  }\item[{\hyperlink{struct_otherwise_1_1_g_l_texture}{G\+L\+Texture}}]{texture,  }\item[{std\+::function$<$ void(\hyperlink{class_otherwise_1_1_particle2_d}{Particle2D} \&, float)$>$}]{update\+Func = {\ttfamily \hyperlink{namespace_otherwise_ac7cfb6f643b2ea32aa02502159d17fb6}{default\+Particle\+Update}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_aaf50427527be4f8557b090134478a745}\label{class_otherwise_1_1_particle_batch2_d_aaf50427527be4f8557b090134478a745}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!update@{update}}
+\index{update@{update}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Particle\+Batch2\+D\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_aea30921077aaeab4bc68b8dac3d843d2}\label{class_otherwise_1_1_particle_batch2_d_aea30921077aaeab4bc68b8dac3d843d2}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+decay\+Rate@{m\+\_\+decay\+Rate}}
+\index{m\+\_\+decay\+Rate@{m\+\_\+decay\+Rate}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+decay\+Rate}{m\_decayRate}}
+{\footnotesize\ttfamily float Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+decay\+Rate = 0.\+1f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a5ff7e1dd8f9e8e93d0d9286f343c939a}\label{class_otherwise_1_1_particle_batch2_d_a5ff7e1dd8f9e8e93d0d9286f343c939a}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+last\+Free\+Particle@{m\+\_\+last\+Free\+Particle}}
+\index{m\+\_\+last\+Free\+Particle@{m\+\_\+last\+Free\+Particle}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+Free\+Particle}{m\_lastFreeParticle}}
+{\footnotesize\ttfamily int Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+last\+Free\+Particle = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a76764d1b85680eb9ef9e81f719b30194}\label{class_otherwise_1_1_particle_batch2_d_a76764d1b85680eb9ef9e81f719b30194}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+max\+Particles@{m\+\_\+max\+Particles}}
+\index{m\+\_\+max\+Particles@{m\+\_\+max\+Particles}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+max\+Particles}{m\_maxParticles}}
+{\footnotesize\ttfamily int Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+max\+Particles = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a4077a59a77153fea4f721e64e0edcb32}\label{class_otherwise_1_1_particle_batch2_d_a4077a59a77153fea4f721e64e0edcb32}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+particles@{m\+\_\+particles}}
+\index{m\+\_\+particles@{m\+\_\+particles}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+particles}{m\_particles}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_particle2_d}{Particle2D}$\ast$ Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+particles = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_aca86956dd63e0dc63f86d28e1af35fbe}\label{class_otherwise_1_1_particle_batch2_d_aca86956dd63e0dc63f86d28e1af35fbe}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+texture@{m\+\_\+texture}}
+\index{m\+\_\+texture@{m\+\_\+texture}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+texture}{m\_texture}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_g_l_texture}{G\+L\+Texture} Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_particle_batch2_d_a6eed0d4ded677fb9044e03f295a6d277}\label{class_otherwise_1_1_particle_batch2_d_a6eed0d4ded677fb9044e03f295a6d277}} 
+\index{Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}!m\+\_\+update\+Func@{m\+\_\+update\+Func}}
+\index{m\+\_\+update\+Func@{m\+\_\+update\+Func}!Otherwise\+::\+Particle\+Batch2D@{Otherwise\+::\+Particle\+Batch2D}}
+\subsubsection{\texorpdfstring{m\+\_\+update\+Func}{m\_updateFunc}}
+{\footnotesize\ttfamily std\+::function$<$void(\hyperlink{class_otherwise_1_1_particle2_d}{Particle2D}\&, float)$>$ Otherwise\+::\+Particle\+Batch2\+D\+::m\+\_\+update\+Func\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Function pointer for custom updates. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_particle_batch2_d_8h}{Particle\+Batch2\+D.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_particle_batch2_d_8cpp}{Particle\+Batch2\+D.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+\hypertarget{class_otherwise_1_1_sprite_font}{}\section{Otherwise\+:\+:Sprite\+Font Class Reference}
+\label{class_otherwise_1_1_sprite_font}\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+
+
+{\ttfamily \#include $<$Sprite\+Font.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_sprite_font_aef9bd7e1b5bb753be2124109865e4444}{Sprite\+Font} ()
+\item 
+\hyperlink{class_otherwise_1_1_sprite_font_a0fd2ed71696d52880b84db3e148b2c36}{Sprite\+Font} (const char $\ast$font, int size, char cs, char ce)
+\item 
+\hyperlink{class_otherwise_1_1_sprite_font_a0406169f2958c4d6f96fc4d82c0faf22}{Sprite\+Font} (const char $\ast$font, int size)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_font_a26716712928e6dfab852320a2d6d29e8}{init} (const char $\ast$font, int size)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_font_af469b7a1b428e4758fa317c0b021c481}{init} (const char $\ast$font, int size, char cs, char ce)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_font_a304cfd3e85f149f2f3346cb10cfcbcf9}{dispose} ()
+\begin{DoxyCompactList}\small\item\em Destroys the font resources. \end{DoxyCompactList}\item 
+int \hyperlink{class_otherwise_1_1_sprite_font_ae6a8a5b1525ec7563fe5a89e91de5707}{get\+Font\+Height} () const
+\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_sprite_font_a0674639c45766ae5fc4643d66d017e17}{measure} (const char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Measures the dimensions of the text. \end{DoxyCompactList}\item 
+void \hyperlink{class_otherwise_1_1_sprite_font_a4da78ead7aab2d809008891f126e43fc}{draw} (\hyperlink{class_otherwise_1_1_sprite_batch}{Sprite\+Batch} \&batch, const char $\ast$s, glm\+::vec2 position, glm\+::vec2 scaling, float depth, \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} tint, \hyperlink{namespace_otherwise_a9eef3c22cbba8efff0211f92a1ed2792}{Justification} just=\hyperlink{namespace_otherwise_a9eef3c22cbba8efff0211f92a1ed2792a684d325a7303f52e64011467ff5c5758}{Justification\+::\+L\+E\+FT})
+\begin{DoxyCompactList}\small\item\em Draws using a spritebatch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ int $>$ $\ast$ \hyperlink{class_otherwise_1_1_sprite_font_a46d4525f7e2cbcd762b00b32885f60a1}{create\+Rows} (glm\+::ivec4 $\ast$rects, int rects\+Length, int r, int padding, int \&w)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_otherwise_1_1_sprite_font_a87e10732d951b4909d976aad334534c2}{\+\_\+reg\+Start}
+\item 
+int \hyperlink{class_otherwise_1_1_sprite_font_a11affde05ba5615112c873b9ec182aee}{\+\_\+reg\+Length}
+\item 
+\hyperlink{struct_otherwise_1_1_char_glyph}{Char\+Glyph} $\ast$ \hyperlink{class_otherwise_1_1_sprite_font_ac20e86fa13894a4833831d2aa6490f19}{\+\_\+glyphs}
+\item 
+int \hyperlink{class_otherwise_1_1_sprite_font_a7f7ad0911b50f50123c0d713d4047711}{\+\_\+font\+Height}
+\item 
+unsigned int \hyperlink{class_otherwise_1_1_sprite_font_a17c16cdf59495a7082e68a81993999ac}{\+\_\+tex\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_aef9bd7e1b5bb753be2124109865e4444}\label{class_otherwise_1_1_sprite_font_aef9bd7e1b5bb753be2124109865e4444}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!Sprite\+Font@{Sprite\+Font}}
+\index{Sprite\+Font@{Sprite\+Font}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{Sprite\+Font()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a0fd2ed71696d52880b84db3e148b2c36}\label{class_otherwise_1_1_sprite_font_a0fd2ed71696d52880b84db3e148b2c36}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!Sprite\+Font@{Sprite\+Font}}
+\index{Sprite\+Font@{Sprite\+Font}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{Sprite\+Font()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font,  }\item[{int}]{size,  }\item[{char}]{cs,  }\item[{char}]{ce }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a0406169f2958c4d6f96fc4d82c0faf22}\label{class_otherwise_1_1_sprite_font_a0406169f2958c4d6f96fc4d82c0faf22}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!Sprite\+Font@{Sprite\+Font}}
+\index{Sprite\+Font@{Sprite\+Font}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{Sprite\+Font()}{SpriteFont()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Sprite\+Font\+::\+Sprite\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a46d4525f7e2cbcd762b00b32885f60a1}\label{class_otherwise_1_1_sprite_font_a46d4525f7e2cbcd762b00b32885f60a1}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!create\+Rows@{create\+Rows}}
+\index{create\+Rows@{create\+Rows}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{create\+Rows()}{createRows()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ $\ast$ Otherwise\+::\+Sprite\+Font\+::create\+Rows (\begin{DoxyParamCaption}\item[{glm\+::ivec4 $\ast$}]{rects,  }\item[{int}]{rects\+Length,  }\item[{int}]{r,  }\item[{int}]{padding,  }\item[{int \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a304cfd3e85f149f2f3346cb10cfcbcf9}\label{class_otherwise_1_1_sprite_font_a304cfd3e85f149f2f3346cb10cfcbcf9}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!dispose@{dispose}}
+\index{dispose@{dispose}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Font\+::dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the font resources. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a4da78ead7aab2d809008891f126e43fc}\label{class_otherwise_1_1_sprite_font_a4da78ead7aab2d809008891f126e43fc}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Font\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_sprite_batch}{Sprite\+Batch} \&}]{batch,  }\item[{const char $\ast$}]{s,  }\item[{glm\+::vec2}]{position,  }\item[{glm\+::vec2}]{scaling,  }\item[{float}]{depth,  }\item[{\hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8}}]{tint,  }\item[{\hyperlink{namespace_otherwise_a9eef3c22cbba8efff0211f92a1ed2792}{Justification}}]{just = {\ttfamily \hyperlink{namespace_otherwise_a9eef3c22cbba8efff0211f92a1ed2792a684d325a7303f52e64011467ff5c5758}{Justification\+::\+L\+E\+FT}} }\end{DoxyParamCaption})}
+
+
+
+Draws using a spritebatch. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_ae6a8a5b1525ec7563fe5a89e91de5707}\label{class_otherwise_1_1_sprite_font_ae6a8a5b1525ec7563fe5a89e91de5707}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!get\+Font\+Height@{get\+Font\+Height}}
+\index{get\+Font\+Height@{get\+Font\+Height}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{get\+Font\+Height()}{getFontHeight()}}
+{\footnotesize\ttfamily int Otherwise\+::\+Sprite\+Font\+::get\+Font\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a26716712928e6dfab852320a2d6d29e8}\label{class_otherwise_1_1_sprite_font_a26716712928e6dfab852320a2d6d29e8}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Font\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_af469b7a1b428e4758fa317c0b021c481}\label{class_otherwise_1_1_sprite_font_af469b7a1b428e4758fa317c0b021c481}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Font\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{font,  }\item[{int}]{size,  }\item[{char}]{cs,  }\item[{char}]{ce }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a0674639c45766ae5fc4643d66d017e17}\label{class_otherwise_1_1_sprite_font_a0674639c45766ae5fc4643d66d017e17}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!measure@{measure}}
+\index{measure@{measure}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Sprite\+Font\+::measure (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Measures the dimensions of the text. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a7f7ad0911b50f50123c0d713d4047711}\label{class_otherwise_1_1_sprite_font_a7f7ad0911b50f50123c0d713d4047711}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!\+\_\+font\+Height@{\+\_\+font\+Height}}
+\index{\+\_\+font\+Height@{\+\_\+font\+Height}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{\+\_\+font\+Height}{\_fontHeight}}
+{\footnotesize\ttfamily int Otherwise\+::\+Sprite\+Font\+::\+\_\+font\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_ac20e86fa13894a4833831d2aa6490f19}\label{class_otherwise_1_1_sprite_font_ac20e86fa13894a4833831d2aa6490f19}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!\+\_\+glyphs@{\+\_\+glyphs}}
+\index{\+\_\+glyphs@{\+\_\+glyphs}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{\+\_\+glyphs}{\_glyphs}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_char_glyph}{Char\+Glyph}$\ast$ Otherwise\+::\+Sprite\+Font\+::\+\_\+glyphs\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a11affde05ba5615112c873b9ec182aee}\label{class_otherwise_1_1_sprite_font_a11affde05ba5615112c873b9ec182aee}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!\+\_\+reg\+Length@{\+\_\+reg\+Length}}
+\index{\+\_\+reg\+Length@{\+\_\+reg\+Length}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{\+\_\+reg\+Length}{\_regLength}}
+{\footnotesize\ttfamily int Otherwise\+::\+Sprite\+Font\+::\+\_\+reg\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a87e10732d951b4909d976aad334534c2}\label{class_otherwise_1_1_sprite_font_a87e10732d951b4909d976aad334534c2}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!\+\_\+reg\+Start@{\+\_\+reg\+Start}}
+\index{\+\_\+reg\+Start@{\+\_\+reg\+Start}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{\+\_\+reg\+Start}{\_regStart}}
+{\footnotesize\ttfamily int Otherwise\+::\+Sprite\+Font\+::\+\_\+reg\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_font_a17c16cdf59495a7082e68a81993999ac}\label{class_otherwise_1_1_sprite_font_a17c16cdf59495a7082e68a81993999ac}} 
+\index{Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}!\+\_\+tex\+ID@{\+\_\+tex\+ID}}
+\index{\+\_\+tex\+ID@{\+\_\+tex\+ID}!Otherwise\+::\+Sprite\+Font@{Otherwise\+::\+Sprite\+Font}}
+\subsubsection{\texorpdfstring{\+\_\+tex\+ID}{\_texID}}
+{\footnotesize\ttfamily unsigned int Otherwise\+::\+Sprite\+Font\+::\+\_\+tex\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_font_8h}{Sprite\+Font.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_font_8cpp}{Sprite\+Font.\+cpp}\end{DoxyCompactItemize}

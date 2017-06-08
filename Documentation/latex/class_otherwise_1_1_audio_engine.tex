@@ -1,0 +1,107 @@
+\hypertarget{class_otherwise_1_1_audio_engine}{}\section{Otherwise\+:\+:Audio\+Engine Class Reference}
+\label{class_otherwise_1_1_audio_engine}\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+
+
+{\ttfamily \#include $<$Audio\+Engine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_audio_engine_a9619c7bc4df7bdd03d35259db9ba59b7}{Audio\+Engine} ()
+\item 
+\hyperlink{class_otherwise_1_1_audio_engine_a4fb770e6d48751d3022512713da1c2aa}{$\sim$\+Audio\+Engine} ()
+\item 
+void \hyperlink{class_otherwise_1_1_audio_engine_a11a6f68e79f200d67f69bbc415f5b897}{init} ()
+\item 
+void \hyperlink{class_otherwise_1_1_audio_engine_a3db329073224b45ea102d52ab3e9e3a1}{destroy} ()
+\item 
+\hyperlink{class_otherwise_1_1_sound_effect}{Sound\+Effect} \hyperlink{class_otherwise_1_1_audio_engine_a5b26ed2abe4daf8149dff94119383458}{load\+Sound\+Effect} (const std\+::string \&file\+Path)
+\item 
+\hyperlink{class_otherwise_1_1_music}{Music} \hyperlink{class_otherwise_1_1_audio_engine_a61860774e93a6ec5bd3b5074427d0100}{load\+Music} (const std\+::string \&file\+Path)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, Mix\+\_\+\+Chunk $\ast$ $>$ \hyperlink{class_otherwise_1_1_audio_engine_ab31977a54a21323685bdd872b0963b99}{m\+\_\+effect\+Map}
+\begin{DoxyCompactList}\small\item\em Effects cache. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, Mix\+\_\+\+Music $\ast$ $>$ \hyperlink{class_otherwise_1_1_audio_engine_ad6aa00936748793bbc2998b2d470c69c}{m\+\_\+music\+Map}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_otherwise_1_1_music}{Music} cache. \end{DoxyCompactList}\item 
+bool \hyperlink{class_otherwise_1_1_audio_engine_a7495688329bbc74b5ebe39c84e782463}{m\+\_\+is\+Initialized} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a9619c7bc4df7bdd03d35259db9ba59b7}\label{class_otherwise_1_1_audio_engine_a9619c7bc4df7bdd03d35259db9ba59b7}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!Audio\+Engine@{Audio\+Engine}}
+\index{Audio\+Engine@{Audio\+Engine}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{Audio\+Engine()}{AudioEngine()}}
+{\footnotesize\ttfamily Otherwise\+::\+Audio\+Engine\+::\+Audio\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a4fb770e6d48751d3022512713da1c2aa}\label{class_otherwise_1_1_audio_engine_a4fb770e6d48751d3022512713da1c2aa}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!````~Audio\+Engine@{$\sim$\+Audio\+Engine}}
+\index{````~Audio\+Engine@{$\sim$\+Audio\+Engine}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Audio\+Engine()}{~AudioEngine()}}
+{\footnotesize\ttfamily Otherwise\+::\+Audio\+Engine\+::$\sim$\+Audio\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a3db329073224b45ea102d52ab3e9e3a1}\label{class_otherwise_1_1_audio_engine_a3db329073224b45ea102d52ab3e9e3a1}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!destroy@{destroy}}
+\index{destroy@{destroy}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Audio\+Engine\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a11a6f68e79f200d67f69bbc415f5b897}\label{class_otherwise_1_1_audio_engine_a11a6f68e79f200d67f69bbc415f5b897}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Audio\+Engine\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a61860774e93a6ec5bd3b5074427d0100}\label{class_otherwise_1_1_audio_engine_a61860774e93a6ec5bd3b5074427d0100}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!load\+Music@{load\+Music}}
+\index{load\+Music@{load\+Music}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{load\+Music()}{loadMusic()}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_music}{Music} Otherwise\+::\+Audio\+Engine\+::load\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a5b26ed2abe4daf8149dff94119383458}\label{class_otherwise_1_1_audio_engine_a5b26ed2abe4daf8149dff94119383458}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!load\+Sound\+Effect@{load\+Sound\+Effect}}
+\index{load\+Sound\+Effect@{load\+Sound\+Effect}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{load\+Sound\+Effect()}{loadSoundEffect()}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_sound_effect}{Sound\+Effect} Otherwise\+::\+Audio\+Engine\+::load\+Sound\+Effect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_ab31977a54a21323685bdd872b0963b99}\label{class_otherwise_1_1_audio_engine_ab31977a54a21323685bdd872b0963b99}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!m\+\_\+effect\+Map@{m\+\_\+effect\+Map}}
+\index{m\+\_\+effect\+Map@{m\+\_\+effect\+Map}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+effect\+Map}{m\_effectMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Mix\+\_\+\+Chunk$\ast$$>$ Otherwise\+::\+Audio\+Engine\+::m\+\_\+effect\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Effects cache. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_a7495688329bbc74b5ebe39c84e782463}\label{class_otherwise_1_1_audio_engine_a7495688329bbc74b5ebe39c84e782463}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!m\+\_\+is\+Initialized@{m\+\_\+is\+Initialized}}
+\index{m\+\_\+is\+Initialized@{m\+\_\+is\+Initialized}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+Initialized}{m\_isInitialized}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Audio\+Engine\+::m\+\_\+is\+Initialized = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_audio_engine_ad6aa00936748793bbc2998b2d470c69c}\label{class_otherwise_1_1_audio_engine_ad6aa00936748793bbc2998b2d470c69c}} 
+\index{Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}!m\+\_\+music\+Map@{m\+\_\+music\+Map}}
+\index{m\+\_\+music\+Map@{m\+\_\+music\+Map}!Otherwise\+::\+Audio\+Engine@{Otherwise\+::\+Audio\+Engine}}
+\subsubsection{\texorpdfstring{m\+\_\+music\+Map}{m\_musicMap}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, Mix\+\_\+\+Music$\ast$$>$ Otherwise\+::\+Audio\+Engine\+::m\+\_\+music\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\hyperlink{class_otherwise_1_1_music}{Music} cache. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_audio_engine_8h}{Audio\+Engine.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_audio_engine_8cpp}{Audio\+Engine.\+cpp}\end{DoxyCompactItemize}

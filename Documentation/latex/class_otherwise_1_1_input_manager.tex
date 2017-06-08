@@ -1,0 +1,146 @@
+\hypertarget{class_otherwise_1_1_input_manager}{}\section{Otherwise\+:\+:Input\+Manager Class Reference}
+\label{class_otherwise_1_1_input_manager}\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+
+
+{\ttfamily \#include $<$Input\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_input_manager_aa1f22cbef02930281a9e78b0890d31dc}{Input\+Manager} ()
+\item 
+\hyperlink{class_otherwise_1_1_input_manager_ab1fac19da4955d26ba1d73e4b5e06bae}{$\sim$\+Input\+Manager} ()
+\item 
+void \hyperlink{class_otherwise_1_1_input_manager_a21b3233ea6ae253dd9a664b0c61ac6f3}{update} ()
+\item 
+void \hyperlink{class_otherwise_1_1_input_manager_a2de3502a6d1d80de801d884b7ccb1de2}{press\+Key} (unsigned int key\+ID)
+\item 
+void \hyperlink{class_otherwise_1_1_input_manager_a054c573ed26193304704769bc8ab618f}{release\+Key} (unsigned int key\+ID)
+\item 
+void \hyperlink{class_otherwise_1_1_input_manager_a2c48b5de9df66ad124fa14ae8f3aec1c}{set\+Mouse\+Coords} (float x, float y)
+\item 
+bool \hyperlink{class_otherwise_1_1_input_manager_a315000bf4db34cd497dd406338d272f3}{is\+Key\+Down} (unsigned int key\+ID)
+\begin{DoxyCompactList}\small\item\em Returns true if the key is held down. \end{DoxyCompactList}\item 
+bool \hyperlink{class_otherwise_1_1_input_manager_a7614f9b32ec12b0562715d3b92eafedd}{is\+Key\+Pressed} (unsigned int key\+ID)
+\begin{DoxyCompactList}\small\item\em Returns true if the key was just pressed. \end{DoxyCompactList}\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_input_manager_ad8acd4f5eccccf2cbbd343dc6483bbe7}{get\+Mouse\+Coords} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_otherwise_1_1_input_manager_aa869a9a4f0f504d61dc091ef5060648e}{was\+Key\+Down} (unsigned int key\+ID)
+\begin{DoxyCompactList}\small\item\em Returns true if the key is held down. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ unsigned int, bool $>$ \hyperlink{class_otherwise_1_1_input_manager_af35f347886956581c8162fd398e774b9}{\+\_\+key\+Map}
+\item 
+std\+::unordered\+\_\+map$<$ unsigned int, bool $>$ \hyperlink{class_otherwise_1_1_input_manager_a2a7308f34f0c13ab0cc1eae3c983333f}{\+\_\+previous\+Key\+Map}
+\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_input_manager_aa782055c173d482fb30cd466a56e0b95}{\+\_\+mouse\+Coords}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_aa1f22cbef02930281a9e78b0890d31dc}\label{class_otherwise_1_1_input_manager_aa1f22cbef02930281a9e78b0890d31dc}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!Input\+Manager@{Input\+Manager}}
+\index{Input\+Manager@{Input\+Manager}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Input\+Manager()}{InputManager()}}
+{\footnotesize\ttfamily Otherwise\+::\+Input\+Manager\+::\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_ab1fac19da4955d26ba1d73e4b5e06bae}\label{class_otherwise_1_1_input_manager_ab1fac19da4955d26ba1d73e4b5e06bae}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!````~Input\+Manager@{$\sim$\+Input\+Manager}}
+\index{````~Input\+Manager@{$\sim$\+Input\+Manager}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Input\+Manager()}{~InputManager()}}
+{\footnotesize\ttfamily Otherwise\+::\+Input\+Manager\+::$\sim$\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_ad8acd4f5eccccf2cbbd343dc6483bbe7}\label{class_otherwise_1_1_input_manager_ad8acd4f5eccccf2cbbd343dc6483bbe7}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!get\+Mouse\+Coords@{get\+Mouse\+Coords}}
+\index{get\+Mouse\+Coords@{get\+Mouse\+Coords}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{get\+Mouse\+Coords()}{getMouseCoords()}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Input\+Manager\+::get\+Mouse\+Coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a315000bf4db34cd497dd406338d272f3}\label{class_otherwise_1_1_input_manager_a315000bf4db34cd497dd406338d272f3}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!is\+Key\+Down@{is\+Key\+Down}}
+\index{is\+Key\+Down@{is\+Key\+Down}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{is\+Key\+Down()}{isKeyDown()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Input\+Manager\+::is\+Key\+Down (\begin{DoxyParamCaption}\item[{unsigned int}]{key\+ID }\end{DoxyParamCaption})}
+
+
+
+Returns true if the key is held down. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a7614f9b32ec12b0562715d3b92eafedd}\label{class_otherwise_1_1_input_manager_a7614f9b32ec12b0562715d3b92eafedd}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!is\+Key\+Pressed@{is\+Key\+Pressed}}
+\index{is\+Key\+Pressed@{is\+Key\+Pressed}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{is\+Key\+Pressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Input\+Manager\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{unsigned int}]{key\+ID }\end{DoxyParamCaption})}
+
+
+
+Returns true if the key was just pressed. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a2de3502a6d1d80de801d884b7ccb1de2}\label{class_otherwise_1_1_input_manager_a2de3502a6d1d80de801d884b7ccb1de2}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!press\+Key@{press\+Key}}
+\index{press\+Key@{press\+Key}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{press\+Key()}{pressKey()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Input\+Manager\+::press\+Key (\begin{DoxyParamCaption}\item[{unsigned int}]{key\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a054c573ed26193304704769bc8ab618f}\label{class_otherwise_1_1_input_manager_a054c573ed26193304704769bc8ab618f}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!release\+Key@{release\+Key}}
+\index{release\+Key@{release\+Key}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{release\+Key()}{releaseKey()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Input\+Manager\+::release\+Key (\begin{DoxyParamCaption}\item[{unsigned int}]{key\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a2c48b5de9df66ad124fa14ae8f3aec1c}\label{class_otherwise_1_1_input_manager_a2c48b5de9df66ad124fa14ae8f3aec1c}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!set\+Mouse\+Coords@{set\+Mouse\+Coords}}
+\index{set\+Mouse\+Coords@{set\+Mouse\+Coords}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{set\+Mouse\+Coords()}{setMouseCoords()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Input\+Manager\+::set\+Mouse\+Coords (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a21b3233ea6ae253dd9a664b0c61ac6f3}\label{class_otherwise_1_1_input_manager_a21b3233ea6ae253dd9a664b0c61ac6f3}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!update@{update}}
+\index{update@{update}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Input\+Manager\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_aa869a9a4f0f504d61dc091ef5060648e}\label{class_otherwise_1_1_input_manager_aa869a9a4f0f504d61dc091ef5060648e}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!was\+Key\+Down@{was\+Key\+Down}}
+\index{was\+Key\+Down@{was\+Key\+Down}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{was\+Key\+Down()}{wasKeyDown()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Input\+Manager\+::was\+Key\+Down (\begin{DoxyParamCaption}\item[{unsigned int}]{key\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Returns true if the key is held down. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_af35f347886956581c8162fd398e774b9}\label{class_otherwise_1_1_input_manager_af35f347886956581c8162fd398e774b9}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!\+\_\+key\+Map@{\+\_\+key\+Map}}
+\index{\+\_\+key\+Map@{\+\_\+key\+Map}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+key\+Map}{\_keyMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$unsigned int, bool$>$ Otherwise\+::\+Input\+Manager\+::\+\_\+key\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_aa782055c173d482fb30cd466a56e0b95}\label{class_otherwise_1_1_input_manager_aa782055c173d482fb30cd466a56e0b95}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!\+\_\+mouse\+Coords@{\+\_\+mouse\+Coords}}
+\index{\+\_\+mouse\+Coords@{\+\_\+mouse\+Coords}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+mouse\+Coords}{\_mouseCoords}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Input\+Manager\+::\+\_\+mouse\+Coords\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_input_manager_a2a7308f34f0c13ab0cc1eae3c983333f}\label{class_otherwise_1_1_input_manager_a2a7308f34f0c13ab0cc1eae3c983333f}} 
+\index{Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}!\+\_\+previous\+Key\+Map@{\+\_\+previous\+Key\+Map}}
+\index{\+\_\+previous\+Key\+Map@{\+\_\+previous\+Key\+Map}!Otherwise\+::\+Input\+Manager@{Otherwise\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+previous\+Key\+Map}{\_previousKeyMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$unsigned int, bool$>$ Otherwise\+::\+Input\+Manager\+::\+\_\+previous\+Key\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_input_manager_8h}{Input\+Manager.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_input_manager_8cpp}{Input\+Manager.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{class_otherwise_1_1_glyph}{}\section{Otherwise\+:\+:Glyph Class Reference}
+\label{class_otherwise_1_1_glyph}\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+
+
+{\ttfamily \#include $<$Sprite\+Batch.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_glyph_a804dc361bec171ee7e8843a6b1e3c008}{Glyph} ()
+\item 
+\hyperlink{class_otherwise_1_1_glyph_a1ffec3de1654e7bc69ee7badfec8fdbd}{Glyph} (const glm\+::vec4 \&dest\+Rect, const glm\+::vec4 \&uv\+Rect, G\+Luint Texture, float Depth, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color)
+\item 
+\hyperlink{class_otherwise_1_1_glyph_a510e44844c26d0617588c715c240b1d0}{Glyph} (const glm\+::vec4 \&dest\+Rect, const glm\+::vec4 \&uv\+Rect, G\+Luint Texture, float Depth, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color, float angle)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_glyph_a9d17c08c37db5c63599a28b80396d808}{texture}
+\item 
+float \hyperlink{class_otherwise_1_1_glyph_a0c14d4d22d5f14f9e97baf7cb4cca50e}{depth}
+\item 
+\hyperlink{struct_otherwise_1_1_vertex}{Vertex} \hyperlink{class_otherwise_1_1_glyph_aefe37835cd288d4f867bbfd3fddfddef}{top\+Left}
+\item 
+\hyperlink{struct_otherwise_1_1_vertex}{Vertex} \hyperlink{class_otherwise_1_1_glyph_a32db963ff65bdbc764a322f729cc485f}{bottom\+Left}
+\item 
+\hyperlink{struct_otherwise_1_1_vertex}{Vertex} \hyperlink{class_otherwise_1_1_glyph_a77f5d16d67d30c9d48e44f3f9e4eefc8}{top\+Right}
+\item 
+\hyperlink{struct_otherwise_1_1_vertex}{Vertex} \hyperlink{class_otherwise_1_1_glyph_ac888e1a0cb784378155ca98277a75802}{bottom\+Right}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_glyph_a1bfdcf1a8e9cbb1f2b86fb9f3d09160c}{rotate\+Point} (const glm\+::vec2 \&pos, float angle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a804dc361bec171ee7e8843a6b1e3c008}\label{class_otherwise_1_1_glyph_a804dc361bec171ee7e8843a6b1e3c008}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!Glyph@{Glyph}}
+\index{Glyph@{Glyph}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{Glyph()}{Glyph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Glyph\+::\+Glyph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a1ffec3de1654e7bc69ee7badfec8fdbd}\label{class_otherwise_1_1_glyph_a1ffec3de1654e7bc69ee7badfec8fdbd}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!Glyph@{Glyph}}
+\index{Glyph@{Glyph}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{Glyph()}{Glyph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Glyph\+::\+Glyph (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{dest\+Rect,  }\item[{const glm\+::vec4 \&}]{uv\+Rect,  }\item[{G\+Luint}]{Texture,  }\item[{float}]{Depth,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a510e44844c26d0617588c715c240b1d0}\label{class_otherwise_1_1_glyph_a510e44844c26d0617588c715c240b1d0}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!Glyph@{Glyph}}
+\index{Glyph@{Glyph}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{Glyph()}{Glyph()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Otherwise\+::\+Glyph\+::\+Glyph (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{dest\+Rect,  }\item[{const glm\+::vec4 \&}]{uv\+Rect,  }\item[{G\+Luint}]{Texture,  }\item[{float}]{Depth,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a1bfdcf1a8e9cbb1f2b86fb9f3d09160c}\label{class_otherwise_1_1_glyph_a1bfdcf1a8e9cbb1f2b86fb9f3d09160c}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!rotate\+Point@{rotate\+Point}}
+\index{rotate\+Point@{rotate\+Point}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{rotate\+Point()}{rotatePoint()}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Glyph\+::rotate\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{pos,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a32db963ff65bdbc764a322f729cc485f}\label{class_otherwise_1_1_glyph_a32db963ff65bdbc764a322f729cc485f}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!bottom\+Left@{bottom\+Left}}
+\index{bottom\+Left@{bottom\+Left}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{bottom\+Left}{bottomLeft}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_vertex}{Vertex} Otherwise\+::\+Glyph\+::bottom\+Left}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_ac888e1a0cb784378155ca98277a75802}\label{class_otherwise_1_1_glyph_ac888e1a0cb784378155ca98277a75802}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!bottom\+Right@{bottom\+Right}}
+\index{bottom\+Right@{bottom\+Right}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{bottom\+Right}{bottomRight}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_vertex}{Vertex} Otherwise\+::\+Glyph\+::bottom\+Right}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a0c14d4d22d5f14f9e97baf7cb4cca50e}\label{class_otherwise_1_1_glyph_a0c14d4d22d5f14f9e97baf7cb4cca50e}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!depth@{depth}}
+\index{depth@{depth}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{depth}{depth}}
+{\footnotesize\ttfamily float Otherwise\+::\+Glyph\+::depth}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a9d17c08c37db5c63599a28b80396d808}\label{class_otherwise_1_1_glyph_a9d17c08c37db5c63599a28b80396d808}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!texture@{texture}}
+\index{texture@{texture}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+Glyph\+::texture}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_aefe37835cd288d4f867bbfd3fddfddef}\label{class_otherwise_1_1_glyph_aefe37835cd288d4f867bbfd3fddfddef}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!top\+Left@{top\+Left}}
+\index{top\+Left@{top\+Left}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{top\+Left}{topLeft}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_vertex}{Vertex} Otherwise\+::\+Glyph\+::top\+Left}
+
+\mbox{\Hypertarget{class_otherwise_1_1_glyph_a77f5d16d67d30c9d48e44f3f9e4eefc8}\label{class_otherwise_1_1_glyph_a77f5d16d67d30c9d48e44f3f9e4eefc8}} 
+\index{Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}!top\+Right@{top\+Right}}
+\index{top\+Right@{top\+Right}!Otherwise\+::\+Glyph@{Otherwise\+::\+Glyph}}
+\subsubsection{\texorpdfstring{top\+Right}{topRight}}
+{\footnotesize\ttfamily \hyperlink{struct_otherwise_1_1_vertex}{Vertex} Otherwise\+::\+Glyph\+::top\+Right}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_batch_8h}{Sprite\+Batch.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_batch_8cpp}{Sprite\+Batch.\+cpp}\end{DoxyCompactItemize}

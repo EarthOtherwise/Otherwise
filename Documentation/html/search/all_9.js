@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['id',['id',['../struct_otherwise_1_1_g_l_texture.html#ad2a3374e92fc2b9edb60139b2c99e146',1,'Otherwise::GLTexture']]],
+  ['igamescreen',['IGameScreen',['../class_otherwise_1_1_i_game_screen.html',1,'Otherwise::IGameScreen'],['../class_otherwise_1_1_i_game_screen.html#a856ccdcb7cd54e77aed29bf949f3d55c',1,'Otherwise::IGameScreen::IGameScreen()']]],
+  ['igamescreen_2eh',['IGameScreen.h',['../_i_game_screen_8h.html',1,'']]],
+  ['imageloader',['ImageLoader',['../class_otherwise_1_1_image_loader.html',1,'Otherwise']]],
+  ['imageloader_2ecpp',['ImageLoader.cpp',['../_image_loader_8cpp.html',1,'']]],
+  ['imageloader_2eh',['ImageLoader.h',['../_image_loader_8h.html',1,'']]],
+  ['imaingame',['IMainGame',['../class_otherwise_1_1_i_main_game.html',1,'Otherwise::IMainGame'],['../class_otherwise_1_1_i_main_game.html#a7c7022f55c7c337012e2a2807bdcc7be',1,'Otherwise::IMainGame::IMainGame()']]],
+  ['imaingame_2ecpp',['IMainGame.cpp',['../_i_main_game_8cpp.html',1,'']]],
+  ['imaingame_2eh',['IMainGame.h',['../_i_main_game_8h.html',1,'']]],
+  ['init',['init',['../class_otherwise_1_1_audio_engine.html#a11a6f68e79f200d67f69bbc415f5b897',1,'Otherwise::AudioEngine::init()'],['../class_otherwise_1_1_camera2_d.html#a87afc1906611723fc9ff4f8af665d32e',1,'Otherwise::Camera2D::init()'],['../class_otherwise_1_1_debug_renderer.html#a3577bb4d2ae74deabf818d7e9392a38f',1,'Otherwise::DebugRenderer::init()'],['../class_otherwise_1_1_g_u_i.html#af5a8499f09a6fb67c60febe056d6d15d',1,'Otherwise::GUI::init()'],['../class_otherwise_1_1_i_main_game.html#aaa5b8aea58011bbf9388e71c13111998',1,'Otherwise::IMainGame::init()'],['../class_otherwise_1_1_particle_batch2_d.html#ac39cfd55e9baa73573914784f700e28a',1,'Otherwise::ParticleBatch2D::init()'],['../class_otherwise_1_1_sprite.html#abc46fb53d9a13586d5b5d6fd81c1a9c1',1,'Otherwise::Sprite::init()'],['../class_otherwise_1_1_sprite_batch.html#adeef815083edeaaec84849b217c89953',1,'Otherwise::SpriteBatch::init()'],['../class_otherwise_1_1_sprite_font.html#a26716712928e6dfab852320a2d6d29e8',1,'Otherwise::SpriteFont::init(const char *font, int size)'],['../class_otherwise_1_1_sprite_font.html#af469b7a1b428e4758fa317c0b021c481',1,'Otherwise::SpriteFont::init(const char *font, int size, char cs, char ce)'],['../class_otherwise_1_1_tile_sheet.html#accf781918ebe300e907873e3dc4e612c',1,'Otherwise::TileSheet::init()'],['../class_otherwise_1_1_fps_limiter.html#ae66d95d3064d999c843c24197da9fa45',1,'Otherwise::FpsLimiter::init()'],['../namespace_otherwise.html#a235559dfa22004cafb278703e9121a2c',1,'Otherwise::init()']]],
+  ['initsystems',['initSystems',['../class_otherwise_1_1_i_main_game.html#ab7d6c71af1f1a69c98232ec656a4991b',1,'Otherwise::IMainGame']]],
+  ['inputmanager',['InputManager',['../class_otherwise_1_1_input_manager.html',1,'Otherwise::InputManager'],['../class_otherwise_1_1_i_main_game.html#a00d93419b43f09f7708a0c872e3b09c8',1,'Otherwise::IMainGame::inputManager()'],['../class_otherwise_1_1_input_manager.html#aa1f22cbef02930281a9e78b0890d31dc',1,'Otherwise::InputManager::InputManager()']]],
+  ['inputmanager_2ecpp',['InputManager.cpp',['../_input_manager_8cpp.html',1,'']]],
+  ['inputmanager_2eh',['InputManager.h',['../_input_manager_8h.html',1,'']]],
+  ['invisible',['INVISIBLE',['../namespace_otherwise.html#affaa1e0413b5cf1eaf35da42836d3ae8a034de8d36689f8bc1673257024b8aba4',1,'Otherwise']]],
+  ['iomanager',['IOManager',['../class_otherwise_1_1_i_o_manager.html',1,'Otherwise']]],
+  ['iomanager_2ecpp',['IOManager.cpp',['../_i_o_manager_8cpp.html',1,'']]],
+  ['iomanager_2eh',['IOManager.h',['../_i_o_manager_8h.html',1,'']]],
+  ['isboxinview',['isBoxInView',['../class_otherwise_1_1_camera2_d.html#a0a2c8888d0051036af74cfed1d835252',1,'Otherwise::Camera2D']]],
+  ['isdirectory',['isDirectory',['../struct_otherwise_1_1_dir_entry.html#a45db964c830ef4817d4fe2eb2fb5d5ca',1,'Otherwise::DirEntry']]],
+  ['iskeydown',['isKeyDown',['../class_otherwise_1_1_input_manager.html#a315000bf4db34cd497dd406338d272f3',1,'Otherwise::InputManager']]],
+  ['iskeypressed',['isKeyPressed',['../class_otherwise_1_1_input_manager.html#a7614f9b32ec12b0562715d3b92eafedd',1,'Otherwise::InputManager']]]
+];

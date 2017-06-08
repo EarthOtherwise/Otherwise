@@ -1,0 +1,98 @@
+\hypertarget{class_otherwise_1_1_music}{}\section{Otherwise\+:\+:Music Class Reference}
+\label{class_otherwise_1_1_music}\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+
+
+{\ttfamily \#include $<$Audio\+Engine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_otherwise_1_1_music_a18aef6a70fa7bc14c92b17792a148828}{play} (int loops=1)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_otherwise_1_1_music_a95dfdf673ae0906c60cc5dee2047154c}{pause} ()
+\begin{DoxyCompactList}\small\item\em Pauses whatever song is currently playing. \end{DoxyCompactList}\item 
+static void \hyperlink{class_otherwise_1_1_music_a31706d4346de50bf724da0157485d8bf}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stops whatever song is currently playing. \end{DoxyCompactList}\item 
+static void \hyperlink{class_otherwise_1_1_music_a6d4a1afb589d1e03a92bc89f1be520b9}{resume} ()
+\begin{DoxyCompactList}\small\item\em Resumes whatever song is currently playing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mix\+\_\+\+Music $\ast$ \hyperlink{class_otherwise_1_1_music_aef72ab0f5a928a12ac16c0f0e8e1e1b7}{m\+\_\+music} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_otherwise_1_1_music_a234a96133b0b1dbaf4181626861f7c4a}{Audio\+Engine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_music_a95dfdf673ae0906c60cc5dee2047154c}\label{class_otherwise_1_1_music_a95dfdf673ae0906c60cc5dee2047154c}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!pause@{pause}}
+\index{pause@{pause}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Music\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pauses whatever song is currently playing. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_music_a18aef6a70fa7bc14c92b17792a148828}\label{class_otherwise_1_1_music_a18aef6a70fa7bc14c92b17792a148828}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!play@{play}}
+\index{play@{play}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Music\+::play (\begin{DoxyParamCaption}\item[{int}]{loops = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Plays the music file 
+\begin{DoxyParams}{Parameters}
+{\em loops} & If loops == -\/1, loop forever, otherwise play it loops times \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_otherwise_1_1_music_a6d4a1afb589d1e03a92bc89f1be520b9}\label{class_otherwise_1_1_music_a6d4a1afb589d1e03a92bc89f1be520b9}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!resume@{resume}}
+\index{resume@{resume}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Music\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resumes whatever song is currently playing. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_music_a31706d4346de50bf724da0157485d8bf}\label{class_otherwise_1_1_music_a31706d4346de50bf724da0157485d8bf}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!stop@{stop}}
+\index{stop@{stop}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Music\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stops whatever song is currently playing. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_music_a234a96133b0b1dbaf4181626861f7c4a}\label{class_otherwise_1_1_music_a234a96133b0b1dbaf4181626861f7c4a}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!Audio\+Engine@{Audio\+Engine}}
+\index{Audio\+Engine@{Audio\+Engine}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{Audio\+Engine}{AudioEngine}}
+{\footnotesize\ttfamily friend class \hyperlink{class_otherwise_1_1_audio_engine}{Audio\+Engine}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_music_aef72ab0f5a928a12ac16c0f0e8e1e1b7}\label{class_otherwise_1_1_music_aef72ab0f5a928a12ac16c0f0e8e1e1b7}} 
+\index{Otherwise\+::\+Music@{Otherwise\+::\+Music}!m\+\_\+music@{m\+\_\+music}}
+\index{m\+\_\+music@{m\+\_\+music}!Otherwise\+::\+Music@{Otherwise\+::\+Music}}
+\subsubsection{\texorpdfstring{m\+\_\+music}{m\_music}}
+{\footnotesize\ttfamily Mix\+\_\+\+Music$\ast$ Otherwise\+::\+Music\+::m\+\_\+music = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_audio_engine_8h}{Audio\+Engine.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_audio_engine_8cpp}{Audio\+Engine.\+cpp}\end{DoxyCompactItemize}

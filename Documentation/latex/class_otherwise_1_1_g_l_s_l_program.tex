@@ -1,0 +1,150 @@
+\hypertarget{class_otherwise_1_1_g_l_s_l_program}{}\section{Otherwise\+:\+:G\+L\+S\+L\+Program Class Reference}
+\label{class_otherwise_1_1_g_l_s_l_program}\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+
+
+{\ttfamily \#include $<$G\+L\+S\+L\+Program.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_g_l_s_l_program_a2edbc486493a624ff3ff75951c304baa}{G\+L\+S\+L\+Program} ()
+\item 
+\hyperlink{class_otherwise_1_1_g_l_s_l_program_af63329a991f67a4c819c0889321078cd}{$\sim$\+G\+L\+S\+L\+Program} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_a4dd0b92d5d5ca700a060fcc5194e78a7}{compile\+Shaders} (const std\+::string \&vertex\+Shader\+File\+Path, const std\+::string \&fragment\+Shader\+File\+Path)
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_ac6e8d01f7082e483c12d5cce44d60991}{compile\+Shaders\+From\+Source} (const char $\ast$vertex\+Source, const char $\ast$fragment\+Source)
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_a49714d1e90dcb57012e389764f7fe3a1}{link\+Shaders} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_aee49f20d56dda1c0b109f93edc9e30be}{add\+Attribute} (const std\+::string \&attribute\+Name)
+\item 
+G\+Lint \hyperlink{class_otherwise_1_1_g_l_s_l_program_a15f93dc15142cf7d99d8b00e53a685c6}{get\+Uniform\+Location} (const std\+::string \&uniform\+Name)
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_a573a963ed74707efb8cec3285b1acfff}{use} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_a4cda1d560e249dacb731d6e79db2842a}{unuse} ()
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_afb779820cfe83f781699a38a1de2a23b}{dispose} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_otherwise_1_1_g_l_s_l_program_aca04ece411763ec9f4ca8844bc6d604e}{compile\+Shader} (const char $\ast$source, const std\+::string \&name, G\+Luint id)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_otherwise_1_1_g_l_s_l_program_aeafefdfa07adcfdaabced1f366aa3d01}{\+\_\+num\+Attributes}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_g_l_s_l_program_abfd84b5a206e36403770f2a207beb0fa}{\+\_\+program\+ID}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_g_l_s_l_program_a13392933d419cf305911c4a272fa99f0}{\+\_\+vertex\+Shader\+ID}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_g_l_s_l_program_aaa40b8daf7734de8d6a754a37cbf0f2d}{\+\_\+fragment\+Shader\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a2edbc486493a624ff3ff75951c304baa}\label{class_otherwise_1_1_g_l_s_l_program_a2edbc486493a624ff3ff75951c304baa}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}}
+\index{G\+L\+S\+L\+Program@{G\+L\+S\+L\+Program}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{G\+L\+S\+L\+Program()}{GLSLProgram()}}
+{\footnotesize\ttfamily Otherwise\+::\+G\+L\+S\+L\+Program\+::\+G\+L\+S\+L\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_af63329a991f67a4c819c0889321078cd}\label{class_otherwise_1_1_g_l_s_l_program_af63329a991f67a4c819c0889321078cd}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!````~G\+L\+S\+L\+Program@{$\sim$\+G\+L\+S\+L\+Program}}
+\index{````~G\+L\+S\+L\+Program@{$\sim$\+G\+L\+S\+L\+Program}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{$\sim$\+G\+L\+S\+L\+Program()}{~GLSLProgram()}}
+{\footnotesize\ttfamily Otherwise\+::\+G\+L\+S\+L\+Program\+::$\sim$\+G\+L\+S\+L\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_aee49f20d56dda1c0b109f93edc9e30be}\label{class_otherwise_1_1_g_l_s_l_program_aee49f20d56dda1c0b109f93edc9e30be}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!add\+Attribute@{add\+Attribute}}
+\index{add\+Attribute@{add\+Attribute}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{add\+Attribute()}{addAttribute()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::add\+Attribute (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{attribute\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_aca04ece411763ec9f4ca8844bc6d604e}\label{class_otherwise_1_1_g_l_s_l_program_aca04ece411763ec9f4ca8844bc6d604e}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!compile\+Shader@{compile\+Shader}}
+\index{compile\+Shader@{compile\+Shader}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shader()}{compileShader()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{source,  }\item[{const std\+::string \&}]{name,  }\item[{G\+Luint}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a4dd0b92d5d5ca700a060fcc5194e78a7}\label{class_otherwise_1_1_g_l_s_l_program_a4dd0b92d5d5ca700a060fcc5194e78a7}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!compile\+Shaders@{compile\+Shaders}}
+\index{compile\+Shaders@{compile\+Shaders}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shaders()}{compileShaders()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::compile\+Shaders (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Shader\+File\+Path,  }\item[{const std\+::string \&}]{fragment\+Shader\+File\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_ac6e8d01f7082e483c12d5cce44d60991}\label{class_otherwise_1_1_g_l_s_l_program_ac6e8d01f7082e483c12d5cce44d60991}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!compile\+Shaders\+From\+Source@{compile\+Shaders\+From\+Source}}
+\index{compile\+Shaders\+From\+Source@{compile\+Shaders\+From\+Source}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shaders\+From\+Source()}{compileShadersFromSource()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::compile\+Shaders\+From\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Source,  }\item[{const char $\ast$}]{fragment\+Source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_afb779820cfe83f781699a38a1de2a23b}\label{class_otherwise_1_1_g_l_s_l_program_afb779820cfe83f781699a38a1de2a23b}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!dispose@{dispose}}
+\index{dispose@{dispose}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a15f93dc15142cf7d99d8b00e53a685c6}\label{class_otherwise_1_1_g_l_s_l_program_a15f93dc15142cf7d99d8b00e53a685c6}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily G\+Lint Otherwise\+::\+G\+L\+S\+L\+Program\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a49714d1e90dcb57012e389764f7fe3a1}\label{class_otherwise_1_1_g_l_s_l_program_a49714d1e90dcb57012e389764f7fe3a1}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!link\+Shaders@{link\+Shaders}}
+\index{link\+Shaders@{link\+Shaders}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{link\+Shaders()}{linkShaders()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::link\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a4cda1d560e249dacb731d6e79db2842a}\label{class_otherwise_1_1_g_l_s_l_program_a4cda1d560e249dacb731d6e79db2842a}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!unuse@{unuse}}
+\index{unuse@{unuse}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{unuse()}{unuse()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::unuse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a573a963ed74707efb8cec3285b1acfff}\label{class_otherwise_1_1_g_l_s_l_program_a573a963ed74707efb8cec3285b1acfff}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!use@{use}}
+\index{use@{use}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Otherwise\+::\+G\+L\+S\+L\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_aaa40b8daf7734de8d6a754a37cbf0f2d}\label{class_otherwise_1_1_g_l_s_l_program_aaa40b8daf7734de8d6a754a37cbf0f2d}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!\+\_\+fragment\+Shader\+ID@{\+\_\+fragment\+Shader\+ID}}
+\index{\+\_\+fragment\+Shader\+ID@{\+\_\+fragment\+Shader\+ID}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{\+\_\+fragment\+Shader\+ID}{\_fragmentShaderID}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+G\+L\+S\+L\+Program\+::\+\_\+fragment\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_aeafefdfa07adcfdaabced1f366aa3d01}\label{class_otherwise_1_1_g_l_s_l_program_aeafefdfa07adcfdaabced1f366aa3d01}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!\+\_\+num\+Attributes@{\+\_\+num\+Attributes}}
+\index{\+\_\+num\+Attributes@{\+\_\+num\+Attributes}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{\+\_\+num\+Attributes}{\_numAttributes}}
+{\footnotesize\ttfamily int Otherwise\+::\+G\+L\+S\+L\+Program\+::\+\_\+num\+Attributes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_abfd84b5a206e36403770f2a207beb0fa}\label{class_otherwise_1_1_g_l_s_l_program_abfd84b5a206e36403770f2a207beb0fa}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!\+\_\+program\+ID@{\+\_\+program\+ID}}
+\index{\+\_\+program\+ID@{\+\_\+program\+ID}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{\+\_\+program\+ID}{\_programID}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+G\+L\+S\+L\+Program\+::\+\_\+program\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_g_l_s_l_program_a13392933d419cf305911c4a272fa99f0}\label{class_otherwise_1_1_g_l_s_l_program_a13392933d419cf305911c4a272fa99f0}} 
+\index{Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}!\+\_\+vertex\+Shader\+ID@{\+\_\+vertex\+Shader\+ID}}
+\index{\+\_\+vertex\+Shader\+ID@{\+\_\+vertex\+Shader\+ID}!Otherwise\+::\+G\+L\+S\+L\+Program@{Otherwise\+::\+G\+L\+S\+L\+Program}}
+\subsubsection{\texorpdfstring{\+\_\+vertex\+Shader\+ID}{\_vertexShaderID}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+G\+L\+S\+L\+Program\+::\+\_\+vertex\+Shader\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_g_l_s_l_program_8h}{G\+L\+S\+L\+Program.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_g_l_s_l_program_8cpp}{G\+L\+S\+L\+Program.\+cpp}\end{DoxyCompactItemize}

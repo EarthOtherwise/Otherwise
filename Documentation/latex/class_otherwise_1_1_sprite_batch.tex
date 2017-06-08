@@ -1,0 +1,217 @@
+\hypertarget{class_otherwise_1_1_sprite_batch}{}\section{Otherwise\+:\+:Sprite\+Batch Class Reference}
+\label{class_otherwise_1_1_sprite_batch}\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+
+
+{\ttfamily \#include $<$Sprite\+Batch.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_sprite_batch_a1d8cdf1c0316c66baf4c67dbb125e77f}{Sprite\+Batch} ()
+\item 
+\hyperlink{class_otherwise_1_1_sprite_batch_a5d9bc87c84c9c08fd9ebff10c41b1842}{$\sim$\+Sprite\+Batch} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_adeef815083edeaaec84849b217c89953}{init} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_aa4a75875485b398fdf8410224824afdb}{dispose} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_aff42633c9a65604638e6589130672b54}{begin} (\hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12ee}{Glyph\+Sort\+Type} sort\+Type=\hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12eea3f92f542bd9ec48f912b9350e22736ac}{Glyph\+Sort\+Type\+::\+T\+E\+X\+T\+U\+RE})
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_ae4ba15d640dc3f711656bf034065b9c5}{end} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_a184beec530e945fddba1684a6ec60b50}{draw} (const glm\+::vec4 \&dest\+Rect, const glm\+::vec4 \&uv\+Rect, G\+Luint texture, float depth, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_a87d88f02c722962bf001029bfbcc5865}{draw} (const glm\+::vec4 \&dest\+Rect, const glm\+::vec4 \&uv\+Rect, G\+Luint texture, float depth, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color, float angle)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_ad64d1d168e2da81e72852685aba464f8}{draw} (const glm\+::vec4 \&dest\+Rect, const glm\+::vec4 \&uv\+Rect, G\+Luint texture, float depth, const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&color, const glm\+::vec2 \&dir)
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_abad7824a3b0bcf28e41f094b62aa076f}{render\+Batch} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_a84e7edc2ebd61683542f552c1073b169}{create\+Render\+Batches} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_a950f90bb29e4253c4fd8db23fe499630}{create\+Vertex\+Array} ()
+\item 
+void \hyperlink{class_otherwise_1_1_sprite_batch_a9558cb9c9930c2280c51371268ee8db1}{sort\+Glyphs} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_otherwise_1_1_sprite_batch_a4969fc26abec87de6f65c5cc0f96495a}{compare\+Front\+To\+Back} (\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$a, \hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$b)
+\item 
+static bool \hyperlink{class_otherwise_1_1_sprite_batch_af2ba50dbf2c5b5ca54c8a378b00b1586}{compare\+Back\+To\+Front} (\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$a, \hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$b)
+\item 
+static bool \hyperlink{class_otherwise_1_1_sprite_batch_ad5f1109914194f6d6675be1ebf45caa8}{compare\+Texture} (\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$a, \hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$b)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_sprite_batch_a3dc165276ddb8236b1b25f65a031dfd1}{\+\_\+vbo}
+\item 
+G\+Luint \hyperlink{class_otherwise_1_1_sprite_batch_a7f10dd2f06d1a2dddb1d39b154b3b4e0}{\+\_\+vao}
+\item 
+\hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12ee}{Glyph\+Sort\+Type} \hyperlink{class_otherwise_1_1_sprite_batch_a04ecf5e57634d10f014245dee9475d15}{\+\_\+sort\+Type}
+\item 
+std\+::vector$<$ \hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$ $>$ \hyperlink{class_otherwise_1_1_sprite_batch_aaf7d70e727f9d649d94ae50001096804}{\+\_\+glyph\+Pointers}
+\begin{DoxyCompactList}\small\item\em This is for sorting. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_otherwise_1_1_glyph}{Glyph} $>$ \hyperlink{class_otherwise_1_1_sprite_batch_ad2a9cfb27737a5fe56e4e98dcfa0471c}{\+\_\+glyphs}
+\begin{DoxyCompactList}\small\item\em These are the actual glyphs. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_otherwise_1_1_render_batch}{Render\+Batch} $>$ \hyperlink{class_otherwise_1_1_sprite_batch_afea39b356cbf6fd85137c58ba7944e08}{\+\_\+render\+Batches}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a1d8cdf1c0316c66baf4c67dbb125e77f}\label{class_otherwise_1_1_sprite_batch_a1d8cdf1c0316c66baf4c67dbb125e77f}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!Sprite\+Batch@{Sprite\+Batch}}
+\index{Sprite\+Batch@{Sprite\+Batch}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{Sprite\+Batch()}{SpriteBatch()}}
+{\footnotesize\ttfamily Otherwise\+::\+Sprite\+Batch\+::\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a5d9bc87c84c9c08fd9ebff10c41b1842}\label{class_otherwise_1_1_sprite_batch_a5d9bc87c84c9c08fd9ebff10c41b1842}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!````~Sprite\+Batch@{$\sim$\+Sprite\+Batch}}
+\index{````~Sprite\+Batch@{$\sim$\+Sprite\+Batch}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{$\sim$\+Sprite\+Batch()}{~SpriteBatch()}}
+{\footnotesize\ttfamily Otherwise\+::\+Sprite\+Batch\+::$\sim$\+Sprite\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_aff42633c9a65604638e6589130672b54}\label{class_otherwise_1_1_sprite_batch_aff42633c9a65604638e6589130672b54}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!begin@{begin}}
+\index{begin@{begin}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::begin (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12ee}{Glyph\+Sort\+Type}}]{sort\+Type = {\ttfamily \hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12eea3f92f542bd9ec48f912b9350e22736ac}{Glyph\+Sort\+Type\+::\+T\+E\+X\+T\+U\+RE}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_af2ba50dbf2c5b5ca54c8a378b00b1586}\label{class_otherwise_1_1_sprite_batch_af2ba50dbf2c5b5ca54c8a378b00b1586}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!compare\+Back\+To\+Front@{compare\+Back\+To\+Front}}
+\index{compare\+Back\+To\+Front@{compare\+Back\+To\+Front}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{compare\+Back\+To\+Front()}{compareBackToFront()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Sprite\+Batch\+::compare\+Back\+To\+Front (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{a,  }\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a4969fc26abec87de6f65c5cc0f96495a}\label{class_otherwise_1_1_sprite_batch_a4969fc26abec87de6f65c5cc0f96495a}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!compare\+Front\+To\+Back@{compare\+Front\+To\+Back}}
+\index{compare\+Front\+To\+Back@{compare\+Front\+To\+Back}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{compare\+Front\+To\+Back()}{compareFrontToBack()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Sprite\+Batch\+::compare\+Front\+To\+Back (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{a,  }\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_ad5f1109914194f6d6675be1ebf45caa8}\label{class_otherwise_1_1_sprite_batch_ad5f1109914194f6d6675be1ebf45caa8}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!compare\+Texture@{compare\+Texture}}
+\index{compare\+Texture@{compare\+Texture}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{compare\+Texture()}{compareTexture()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Sprite\+Batch\+::compare\+Texture (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{a,  }\item[{\hyperlink{class_otherwise_1_1_glyph}{Glyph} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a84e7edc2ebd61683542f552c1073b169}\label{class_otherwise_1_1_sprite_batch_a84e7edc2ebd61683542f552c1073b169}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!create\+Render\+Batches@{create\+Render\+Batches}}
+\index{create\+Render\+Batches@{create\+Render\+Batches}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{create\+Render\+Batches()}{createRenderBatches()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::create\+Render\+Batches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a950f90bb29e4253c4fd8db23fe499630}\label{class_otherwise_1_1_sprite_batch_a950f90bb29e4253c4fd8db23fe499630}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!create\+Vertex\+Array@{create\+Vertex\+Array}}
+\index{create\+Vertex\+Array@{create\+Vertex\+Array}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{create\+Vertex\+Array()}{createVertexArray()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::create\+Vertex\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_aa4a75875485b398fdf8410224824afdb}\label{class_otherwise_1_1_sprite_batch_aa4a75875485b398fdf8410224824afdb}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!dispose@{dispose}}
+\index{dispose@{dispose}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a184beec530e945fddba1684a6ec60b50}\label{class_otherwise_1_1_sprite_batch_a184beec530e945fddba1684a6ec60b50}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::draw (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{dest\+Rect,  }\item[{const glm\+::vec4 \&}]{uv\+Rect,  }\item[{G\+Luint}]{texture,  }\item[{float}]{depth,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a87d88f02c722962bf001029bfbcc5865}\label{class_otherwise_1_1_sprite_batch_a87d88f02c722962bf001029bfbcc5865}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::draw (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{dest\+Rect,  }\item[{const glm\+::vec4 \&}]{uv\+Rect,  }\item[{G\+Luint}]{texture,  }\item[{float}]{depth,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_ad64d1d168e2da81e72852685aba464f8}\label{class_otherwise_1_1_sprite_batch_ad64d1d168e2da81e72852685aba464f8}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!draw@{draw}}
+\index{draw@{draw}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::draw (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{dest\+Rect,  }\item[{const glm\+::vec4 \&}]{uv\+Rect,  }\item[{G\+Luint}]{texture,  }\item[{float}]{depth,  }\item[{const \hyperlink{struct_otherwise_1_1_color_r_g_b_a8}{Color\+R\+G\+B\+A8} \&}]{color,  }\item[{const glm\+::vec2 \&}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_ae4ba15d640dc3f711656bf034065b9c5}\label{class_otherwise_1_1_sprite_batch_ae4ba15d640dc3f711656bf034065b9c5}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!end@{end}}
+\index{end@{end}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_adeef815083edeaaec84849b217c89953}\label{class_otherwise_1_1_sprite_batch_adeef815083edeaaec84849b217c89953}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_abad7824a3b0bcf28e41f094b62aa076f}\label{class_otherwise_1_1_sprite_batch_abad7824a3b0bcf28e41f094b62aa076f}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!render\+Batch@{render\+Batch}}
+\index{render\+Batch@{render\+Batch}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{render\+Batch()}{renderBatch()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::render\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a9558cb9c9930c2280c51371268ee8db1}\label{class_otherwise_1_1_sprite_batch_a9558cb9c9930c2280c51371268ee8db1}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!sort\+Glyphs@{sort\+Glyphs}}
+\index{sort\+Glyphs@{sort\+Glyphs}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{sort\+Glyphs()}{sortGlyphs()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Sprite\+Batch\+::sort\+Glyphs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_aaf7d70e727f9d649d94ae50001096804}\label{class_otherwise_1_1_sprite_batch_aaf7d70e727f9d649d94ae50001096804}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+glyph\+Pointers@{\+\_\+glyph\+Pointers}}
+\index{\+\_\+glyph\+Pointers@{\+\_\+glyph\+Pointers}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+glyph\+Pointers}{\_glyphPointers}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_otherwise_1_1_glyph}{Glyph}$\ast$$>$ Otherwise\+::\+Sprite\+Batch\+::\+\_\+glyph\+Pointers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is for sorting. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_ad2a9cfb27737a5fe56e4e98dcfa0471c}\label{class_otherwise_1_1_sprite_batch_ad2a9cfb27737a5fe56e4e98dcfa0471c}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+glyphs@{\+\_\+glyphs}}
+\index{\+\_\+glyphs@{\+\_\+glyphs}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+glyphs}{\_glyphs}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_otherwise_1_1_glyph}{Glyph}$>$ Otherwise\+::\+Sprite\+Batch\+::\+\_\+glyphs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+These are the actual glyphs. 
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_afea39b356cbf6fd85137c58ba7944e08}\label{class_otherwise_1_1_sprite_batch_afea39b356cbf6fd85137c58ba7944e08}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+render\+Batches@{\+\_\+render\+Batches}}
+\index{\+\_\+render\+Batches@{\+\_\+render\+Batches}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+render\+Batches}{\_renderBatches}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_otherwise_1_1_render_batch}{Render\+Batch}$>$ Otherwise\+::\+Sprite\+Batch\+::\+\_\+render\+Batches\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a04ecf5e57634d10f014245dee9475d15}\label{class_otherwise_1_1_sprite_batch_a04ecf5e57634d10f014245dee9475d15}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+sort\+Type@{\+\_\+sort\+Type}}
+\index{\+\_\+sort\+Type@{\+\_\+sort\+Type}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+sort\+Type}{\_sortType}}
+{\footnotesize\ttfamily \hyperlink{namespace_otherwise_aa27b94bf7fe0e95dd17ed0a3506b12ee}{Glyph\+Sort\+Type} Otherwise\+::\+Sprite\+Batch\+::\+\_\+sort\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a7f10dd2f06d1a2dddb1d39b154b3b4e0}\label{class_otherwise_1_1_sprite_batch_a7f10dd2f06d1a2dddb1d39b154b3b4e0}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+vao@{\+\_\+vao}}
+\index{\+\_\+vao@{\+\_\+vao}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+vao}{\_vao}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+Sprite\+Batch\+::\+\_\+vao\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_sprite_batch_a3dc165276ddb8236b1b25f65a031dfd1}\label{class_otherwise_1_1_sprite_batch_a3dc165276ddb8236b1b25f65a031dfd1}} 
+\index{Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}!\+\_\+vbo@{\+\_\+vbo}}
+\index{\+\_\+vbo@{\+\_\+vbo}!Otherwise\+::\+Sprite\+Batch@{Otherwise\+::\+Sprite\+Batch}}
+\subsubsection{\texorpdfstring{\+\_\+vbo}{\_vbo}}
+{\footnotesize\ttfamily G\+Luint Otherwise\+::\+Sprite\+Batch\+::\+\_\+vbo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_batch_8h}{Sprite\+Batch.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_sprite_batch_8cpp}{Sprite\+Batch.\+cpp}\end{DoxyCompactItemize}

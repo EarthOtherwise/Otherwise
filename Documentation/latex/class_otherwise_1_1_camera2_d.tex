@@ -1,0 +1,195 @@
+\hypertarget{class_otherwise_1_1_camera2_d}{}\section{Otherwise\+:\+:Camera2D Class Reference}
+\label{class_otherwise_1_1_camera2_d}\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+
+
+{\ttfamily \#include $<$Camera2\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_camera2_d_a5c47dfba158bee50e826c01f8168d4eb}{Camera2D} ()
+\item 
+\hyperlink{class_otherwise_1_1_camera2_d_a4a2fd76b13d85479385190d64adce2ba}{$\sim$\+Camera2D} ()
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_a87afc1906611723fc9ff4f8af665d32e}{init} (int screen\+Width, int screen\+Height)
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_afffd5de77063c6728af86f71ec7b6233}{update} ()
+\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_camera2_d_a47d548a2620e1ebaa722d55fc5f05fc9}{convert\+Screen\+To\+World} (glm\+::vec2 screen\+Coords)
+\item 
+bool \hyperlink{class_otherwise_1_1_camera2_d_a0a2c8888d0051036af74cfed1d835252}{is\+Box\+In\+View} (const glm\+::vec2 \&position, const glm\+::vec2 \&dimensions)
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_a5eb7a0a18dbd5a40f005665badb61987}{offset\+Position} (const glm\+::vec2 \&offset)
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_a29fb698c45d19c954201faaf85c17d36}{offset\+Scale} (float offset)
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_ada022899c5f23e8b36120b6b1b2dc364}{set\+Position} (const glm\+::vec2 \&new\+Position)
+\item 
+void \hyperlink{class_otherwise_1_1_camera2_d_ab1403d65989c8aaf5f1a573275d9e2e8}{set\+Scale} (float new\+Scale)
+\item 
+const glm\+::vec2 \& \hyperlink{class_otherwise_1_1_camera2_d_a1db406c634d202108331a628ec7f9ee8}{get\+Position} () const
+\item 
+float \hyperlink{class_otherwise_1_1_camera2_d_a233977db59a40e573878f3e9ec2de6bf}{get\+Scale} () const
+\item 
+const glm\+::mat4 \& \hyperlink{class_otherwise_1_1_camera2_d_a535c2f94d615af1bfe30496266c0c32e}{get\+Camera\+Matrix} () const
+\item 
+float \hyperlink{class_otherwise_1_1_camera2_d_a4f25b7bc508530bb2038179eb6ab4a0a}{get\+Aspect\+Ratio} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_otherwise_1_1_camera2_d_a568bfdd6c1ae38b02b6936d9ece07e28}{\+\_\+screen\+Width}
+\item 
+int \hyperlink{class_otherwise_1_1_camera2_d_a5bba4447f680c5edc1f12ea44c6258da}{\+\_\+screen\+Height}
+\item 
+bool \hyperlink{class_otherwise_1_1_camera2_d_a068ba51b7776d1819a64271424739766}{\+\_\+needs\+Matrix\+Update}
+\item 
+float \hyperlink{class_otherwise_1_1_camera2_d_aa15cebd1c3ce46b4fb7ed8d2a62ee309}{\+\_\+scale}
+\item 
+glm\+::vec2 \hyperlink{class_otherwise_1_1_camera2_d_a95e31908d77ba3f25f4ffcb6f453586c}{\+\_\+position}
+\item 
+glm\+::mat4 \hyperlink{class_otherwise_1_1_camera2_d_a447909c36204fb2d5113641a5e6aa50e}{\+\_\+camera\+Matrix}
+\item 
+glm\+::mat4 \hyperlink{class_otherwise_1_1_camera2_d_a42b670ca8680a75559b21f9ab8388b22}{\+\_\+ortho\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a5c47dfba158bee50e826c01f8168d4eb}\label{class_otherwise_1_1_camera2_d_a5c47dfba158bee50e826c01f8168d4eb}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!Camera2D@{Camera2D}}
+\index{Camera2D@{Camera2D}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{Camera2\+D()}{Camera2D()}}
+{\footnotesize\ttfamily Otherwise\+::\+Camera2\+D\+::\+Camera2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a4a2fd76b13d85479385190d64adce2ba}\label{class_otherwise_1_1_camera2_d_a4a2fd76b13d85479385190d64adce2ba}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!````~Camera2D@{$\sim$\+Camera2D}}
+\index{````~Camera2D@{$\sim$\+Camera2D}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera2\+D()}{~Camera2D()}}
+{\footnotesize\ttfamily Otherwise\+::\+Camera2\+D\+::$\sim$\+Camera2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a47d548a2620e1ebaa722d55fc5f05fc9}\label{class_otherwise_1_1_camera2_d_a47d548a2620e1ebaa722d55fc5f05fc9}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!convert\+Screen\+To\+World@{convert\+Screen\+To\+World}}
+\index{convert\+Screen\+To\+World@{convert\+Screen\+To\+World}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{convert\+Screen\+To\+World()}{convertScreenToWorld()}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Camera2\+D\+::convert\+Screen\+To\+World (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{screen\+Coords }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a4f25b7bc508530bb2038179eb6ab4a0a}\label{class_otherwise_1_1_camera2_d_a4f25b7bc508530bb2038179eb6ab4a0a}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!get\+Aspect\+Ratio@{get\+Aspect\+Ratio}}
+\index{get\+Aspect\+Ratio@{get\+Aspect\+Ratio}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{get\+Aspect\+Ratio()}{getAspectRatio()}}
+{\footnotesize\ttfamily float Otherwise\+::\+Camera2\+D\+::get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a535c2f94d615af1bfe30496266c0c32e}\label{class_otherwise_1_1_camera2_d_a535c2f94d615af1bfe30496266c0c32e}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!get\+Camera\+Matrix@{get\+Camera\+Matrix}}
+\index{get\+Camera\+Matrix@{get\+Camera\+Matrix}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{get\+Camera\+Matrix()}{getCameraMatrix()}}
+{\footnotesize\ttfamily const glm\+::mat4\& Otherwise\+::\+Camera2\+D\+::get\+Camera\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a1db406c634d202108331a628ec7f9ee8}\label{class_otherwise_1_1_camera2_d_a1db406c634d202108331a628ec7f9ee8}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily const glm\+::vec2\& Otherwise\+::\+Camera2\+D\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a233977db59a40e573878f3e9ec2de6bf}\label{class_otherwise_1_1_camera2_d_a233977db59a40e573878f3e9ec2de6bf}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float Otherwise\+::\+Camera2\+D\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a87afc1906611723fc9ff4f8af665d32e}\label{class_otherwise_1_1_camera2_d_a87afc1906611723fc9ff4f8af665d32e}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!init@{init}}
+\index{init@{init}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::init (\begin{DoxyParamCaption}\item[{int}]{screen\+Width,  }\item[{int}]{screen\+Height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a0a2c8888d0051036af74cfed1d835252}\label{class_otherwise_1_1_camera2_d_a0a2c8888d0051036af74cfed1d835252}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!is\+Box\+In\+View@{is\+Box\+In\+View}}
+\index{is\+Box\+In\+View@{is\+Box\+In\+View}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{is\+Box\+In\+View()}{isBoxInView()}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Camera2\+D\+::is\+Box\+In\+View (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{position,  }\item[{const glm\+::vec2 \&}]{dimensions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a5eb7a0a18dbd5a40f005665badb61987}\label{class_otherwise_1_1_camera2_d_a5eb7a0a18dbd5a40f005665badb61987}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!offset\+Position@{offset\+Position}}
+\index{offset\+Position@{offset\+Position}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{offset\+Position()}{offsetPosition()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::offset\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a29fb698c45d19c954201faaf85c17d36}\label{class_otherwise_1_1_camera2_d_a29fb698c45d19c954201faaf85c17d36}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!offset\+Scale@{offset\+Scale}}
+\index{offset\+Scale@{offset\+Scale}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{offset\+Scale()}{offsetScale()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::offset\+Scale (\begin{DoxyParamCaption}\item[{float}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_ada022899c5f23e8b36120b6b1b2dc364}\label{class_otherwise_1_1_camera2_d_ada022899c5f23e8b36120b6b1b2dc364}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{new\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_ab1403d65989c8aaf5f1a573275d9e2e8}\label{class_otherwise_1_1_camera2_d_ab1403d65989c8aaf5f1a573275d9e2e8}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{new\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_afffd5de77063c6728af86f71ec7b6233}\label{class_otherwise_1_1_camera2_d_afffd5de77063c6728af86f71ec7b6233}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!update@{update}}
+\index{update@{update}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Camera2\+D\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a447909c36204fb2d5113641a5e6aa50e}\label{class_otherwise_1_1_camera2_d_a447909c36204fb2d5113641a5e6aa50e}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+camera\+Matrix@{\+\_\+camera\+Matrix}}
+\index{\+\_\+camera\+Matrix@{\+\_\+camera\+Matrix}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+camera\+Matrix}{\_cameraMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 Otherwise\+::\+Camera2\+D\+::\+\_\+camera\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a068ba51b7776d1819a64271424739766}\label{class_otherwise_1_1_camera2_d_a068ba51b7776d1819a64271424739766}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+needs\+Matrix\+Update@{\+\_\+needs\+Matrix\+Update}}
+\index{\+\_\+needs\+Matrix\+Update@{\+\_\+needs\+Matrix\+Update}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+needs\+Matrix\+Update}{\_needsMatrixUpdate}}
+{\footnotesize\ttfamily bool Otherwise\+::\+Camera2\+D\+::\+\_\+needs\+Matrix\+Update\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a42b670ca8680a75559b21f9ab8388b22}\label{class_otherwise_1_1_camera2_d_a42b670ca8680a75559b21f9ab8388b22}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+ortho\+Matrix@{\+\_\+ortho\+Matrix}}
+\index{\+\_\+ortho\+Matrix@{\+\_\+ortho\+Matrix}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+ortho\+Matrix}{\_orthoMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 Otherwise\+::\+Camera2\+D\+::\+\_\+ortho\+Matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a95e31908d77ba3f25f4ffcb6f453586c}\label{class_otherwise_1_1_camera2_d_a95e31908d77ba3f25f4ffcb6f453586c}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+position@{\+\_\+position}}
+\index{\+\_\+position@{\+\_\+position}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+position}{\_position}}
+{\footnotesize\ttfamily glm\+::vec2 Otherwise\+::\+Camera2\+D\+::\+\_\+position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_aa15cebd1c3ce46b4fb7ed8d2a62ee309}\label{class_otherwise_1_1_camera2_d_aa15cebd1c3ce46b4fb7ed8d2a62ee309}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+scale@{\+\_\+scale}}
+\index{\+\_\+scale@{\+\_\+scale}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+scale}{\_scale}}
+{\footnotesize\ttfamily float Otherwise\+::\+Camera2\+D\+::\+\_\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a5bba4447f680c5edc1f12ea44c6258da}\label{class_otherwise_1_1_camera2_d_a5bba4447f680c5edc1f12ea44c6258da}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+screen\+Height@{\+\_\+screen\+Height}}
+\index{\+\_\+screen\+Height@{\+\_\+screen\+Height}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+screen\+Height}{\_screenHeight}}
+{\footnotesize\ttfamily int Otherwise\+::\+Camera2\+D\+::\+\_\+screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_camera2_d_a568bfdd6c1ae38b02b6936d9ece07e28}\label{class_otherwise_1_1_camera2_d_a568bfdd6c1ae38b02b6936d9ece07e28}} 
+\index{Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}!\+\_\+screen\+Width@{\+\_\+screen\+Width}}
+\index{\+\_\+screen\+Width@{\+\_\+screen\+Width}!Otherwise\+::\+Camera2D@{Otherwise\+::\+Camera2D}}
+\subsubsection{\texorpdfstring{\+\_\+screen\+Width}{\_screenWidth}}
+{\footnotesize\ttfamily int Otherwise\+::\+Camera2\+D\+::\+\_\+screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_camera2_d_8h}{Camera2\+D.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_camera2_d_8cpp}{Camera2\+D.\+cpp}\end{DoxyCompactItemize}

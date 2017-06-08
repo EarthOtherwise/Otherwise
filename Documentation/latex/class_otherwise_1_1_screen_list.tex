@@ -1,0 +1,115 @@
+\hypertarget{class_otherwise_1_1_screen_list}{}\section{Otherwise\+:\+:Screen\+List Class Reference}
+\label{class_otherwise_1_1_screen_list}\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+
+
+{\ttfamily \#include $<$Screen\+List.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_screen_list_ab74ed0486008cb724c1afcd071bf01f3}{Screen\+List} (\hyperlink{class_otherwise_1_1_i_main_game}{I\+Main\+Game} $\ast$game)
+\item 
+\hyperlink{class_otherwise_1_1_screen_list_a4697122150d3d944eddb21240255c3ca}{$\sim$\+Screen\+List} ()
+\item 
+\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ \hyperlink{class_otherwise_1_1_screen_list_a9533daabbc08996cd5228e9eba9e0f39}{move\+Next} ()
+\item 
+\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ \hyperlink{class_otherwise_1_1_screen_list_ad3898a50d92e0c6bab52dcca9ee6a3f3}{move\+Previous} ()
+\item 
+void \hyperlink{class_otherwise_1_1_screen_list_a66cd1fe6595bb23202956cc9e0a36ce3}{set\+Screen} (int next\+Screen)
+\item 
+void \hyperlink{class_otherwise_1_1_screen_list_a45c8bbeb641888f1c6f2da2b0c2b7af0}{add\+Screen} (\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$new\+Screen)
+\item 
+void \hyperlink{class_otherwise_1_1_screen_list_a02170d4a20cf77f9765cf8c55edd6d0a}{destroy} ()
+\item 
+\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ \hyperlink{class_otherwise_1_1_screen_list_a4d6113dbdfc9180e435b17325ef79cd1}{get\+Current} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_otherwise_1_1_i_main_game}{I\+Main\+Game} $\ast$ \hyperlink{class_otherwise_1_1_screen_list_a937cdad76d229b39827de63cc16911d1}{m\+\_\+game} = nullptr
+\item 
+std\+::vector$<$ \hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ $>$ \hyperlink{class_otherwise_1_1_screen_list_a3237c433e2a02dc3644b62fe48afdb84}{m\+\_\+screens}
+\item 
+int \hyperlink{class_otherwise_1_1_screen_list_af52f5cb47e2592df1fa18556c0ad4726}{m\+\_\+current\+Screen\+Index} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_ab74ed0486008cb724c1afcd071bf01f3}\label{class_otherwise_1_1_screen_list_ab74ed0486008cb724c1afcd071bf01f3}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!Screen\+List@{Screen\+List}}
+\index{Screen\+List@{Screen\+List}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{Screen\+List()}{ScreenList()}}
+{\footnotesize\ttfamily Otherwise\+::\+Screen\+List\+::\+Screen\+List (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_i_main_game}{I\+Main\+Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a4697122150d3d944eddb21240255c3ca}\label{class_otherwise_1_1_screen_list_a4697122150d3d944eddb21240255c3ca}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!````~Screen\+List@{$\sim$\+Screen\+List}}
+\index{````~Screen\+List@{$\sim$\+Screen\+List}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{$\sim$\+Screen\+List()}{~ScreenList()}}
+{\footnotesize\ttfamily Otherwise\+::\+Screen\+List\+::$\sim$\+Screen\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a45c8bbeb641888f1c6f2da2b0c2b7af0}\label{class_otherwise_1_1_screen_list_a45c8bbeb641888f1c6f2da2b0c2b7af0}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!add\+Screen@{add\+Screen}}
+\index{add\+Screen@{add\+Screen}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{add\+Screen()}{addScreen()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Screen\+List\+::add\+Screen (\begin{DoxyParamCaption}\item[{\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$}]{new\+Screen }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a02170d4a20cf77f9765cf8c55edd6d0a}\label{class_otherwise_1_1_screen_list_a02170d4a20cf77f9765cf8c55edd6d0a}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!destroy@{destroy}}
+\index{destroy@{destroy}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Screen\+List\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a4d6113dbdfc9180e435b17325ef79cd1}\label{class_otherwise_1_1_screen_list_a4d6113dbdfc9180e435b17325ef79cd1}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!get\+Current@{get\+Current}}
+\index{get\+Current@{get\+Current}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{get\+Current()}{getCurrent()}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ Otherwise\+::\+Screen\+List\+::get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a9533daabbc08996cd5228e9eba9e0f39}\label{class_otherwise_1_1_screen_list_a9533daabbc08996cd5228e9eba9e0f39}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!move\+Next@{move\+Next}}
+\index{move\+Next@{move\+Next}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{move\+Next()}{moveNext()}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ Otherwise\+::\+Screen\+List\+::move\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_ad3898a50d92e0c6bab52dcca9ee6a3f3}\label{class_otherwise_1_1_screen_list_ad3898a50d92e0c6bab52dcca9ee6a3f3}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!move\+Previous@{move\+Previous}}
+\index{move\+Previous@{move\+Previous}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{move\+Previous()}{movePrevious()}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen} $\ast$ Otherwise\+::\+Screen\+List\+::move\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a66cd1fe6595bb23202956cc9e0a36ce3}\label{class_otherwise_1_1_screen_list_a66cd1fe6595bb23202956cc9e0a36ce3}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!set\+Screen@{set\+Screen}}
+\index{set\+Screen@{set\+Screen}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{set\+Screen()}{setScreen()}}
+{\footnotesize\ttfamily void Otherwise\+::\+Screen\+List\+::set\+Screen (\begin{DoxyParamCaption}\item[{int}]{next\+Screen }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_af52f5cb47e2592df1fa18556c0ad4726}\label{class_otherwise_1_1_screen_list_af52f5cb47e2592df1fa18556c0ad4726}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!m\+\_\+current\+Screen\+Index@{m\+\_\+current\+Screen\+Index}}
+\index{m\+\_\+current\+Screen\+Index@{m\+\_\+current\+Screen\+Index}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+Screen\+Index}{m\_currentScreenIndex}}
+{\footnotesize\ttfamily int Otherwise\+::\+Screen\+List\+::m\+\_\+current\+Screen\+Index = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a937cdad76d229b39827de63cc16911d1}\label{class_otherwise_1_1_screen_list_a937cdad76d229b39827de63cc16911d1}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!m\+\_\+game@{m\+\_\+game}}
+\index{m\+\_\+game@{m\+\_\+game}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+game}{m\_game}}
+{\footnotesize\ttfamily \hyperlink{class_otherwise_1_1_i_main_game}{I\+Main\+Game}$\ast$ Otherwise\+::\+Screen\+List\+::m\+\_\+game = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_otherwise_1_1_screen_list_a3237c433e2a02dc3644b62fe48afdb84}\label{class_otherwise_1_1_screen_list_a3237c433e2a02dc3644b62fe48afdb84}} 
+\index{Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}!m\+\_\+screens@{m\+\_\+screens}}
+\index{m\+\_\+screens@{m\+\_\+screens}!Otherwise\+::\+Screen\+List@{Otherwise\+::\+Screen\+List}}
+\subsubsection{\texorpdfstring{m\+\_\+screens}{m\_screens}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_otherwise_1_1_i_game_screen}{I\+Game\+Screen}$\ast$$>$ Otherwise\+::\+Screen\+List\+::m\+\_\+screens\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_screen_list_8h}{Screen\+List.\+h}\item 
+C\+:/\+Users/\+Alice/\+Documents/\+Git\+Hub/\+Otherwise/\+Otherwise/\hyperlink{_screen_list_8cpp}{Screen\+List.\+cpp}\end{DoxyCompactItemize}
